@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\css\\Registerstylet.css",
+      "PackagePath": "staticwebassets\\css\\Registerstylet.css"
+    },
+    {
       "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\css\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\css\\ajax-loader.gif"
     },
@@ -181,10 +185,6 @@
       "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\about.jpg",
-      "PackagePath": "staticwebassets\\images\\about.jpg"
-    },
-    {
       "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\bg_1.jpg",
       "PackagePath": "staticwebassets\\images\\bg_1.jpg"
     },
@@ -195,6 +195,14 @@
     {
       "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\bg_3.jpg",
       "PackagePath": "staticwebassets\\images\\bg_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\categories\\1cb40c6b-df79-44f9-9ca0-dc692da5218e_wifi.svg",
+      "PackagePath": "staticwebassets\\images\\categories\\1cb40c6b-df79-44f9-9ca0-dc692da5218e_wifi.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\categories\\262a0e80-51a0-4698-b79a-ed2b75b489e6_wifi.svg",
+      "PackagePath": "staticwebassets\\images\\categories\\262a0e80-51a0-4698-b79a-ed2b75b489e6_wifi.svg"
     },
     {
       "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\category-1.jpg",
@@ -239,6 +247,10 @@
     {
       "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\image_6.jpg",
       "PackagePath": "staticwebassets\\images\\image_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
     },
     {
       "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\partner-1.png",
@@ -323,6 +335,26 @@
     {
       "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\product-9.jpg",
       "PackagePath": "staticwebassets\\images\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\products\\02e65da6-ec8d-4e7d-b174-3e79ba6d15d1_check-circle (3).svg",
+      "PackagePath": "staticwebassets\\images\\products\\02e65da6-ec8d-4e7d-b174-3e79ba6d15d1_check-circle (3).svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\products\\50953747-8953-44bd-bf9e-38ad98748623_logo-color.png",
+      "PackagePath": "staticwebassets\\images\\products\\50953747-8953-44bd-bf9e-38ad98748623_logo-color.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\products\\7138e4f9-6734-40df-8a54-fd81125a0c10_wifi.svg",
+      "PackagePath": "staticwebassets\\images\\products\\7138e4f9-6734-40df-8a54-fd81125a0c10_wifi.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\products\\b1546620-50a5-4357-9e4e-b9e658f00035_check-circle (3).svg",
+      "PackagePath": "staticwebassets\\images\\products\\b1546620-50a5-4357-9e4e-b9e658f00035_check-circle (3).svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\products\\bd0fa5b9-a654-48bf-a9e8-d2d06758ec5c_check-circle (3).svg",
+      "PackagePath": "staticwebassets\\images\\products\\bd0fa5b9-a654-48bf-a9e8-d2d06758ec5c_check-circle (3).svg"
     },
     {
       "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\js\\aos.js",

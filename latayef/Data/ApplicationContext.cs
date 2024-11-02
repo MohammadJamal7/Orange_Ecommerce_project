@@ -1,18 +1,17 @@
 ﻿using latayef.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace latayef.Data
 {
-    public class ApplicationContext:DbContext
+    public class ApplicationContext : IdentityDbContext<User>
     {
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
-          : base(options)
+            : base(options)
         {
         }
 
         // DbSets for each entity model in your application
-        public DbSet<User> Users { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Cart> Carts { get; set; }
@@ -24,5 +23,18 @@ namespace latayef.Data
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Wishlist> Wishlists { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Configure one-to-one relationship between User and Cart
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.Cart)
+                .WithOne(c => c.User)
+                .HasForeignKey<Cart>(c => c.UserId)
+                .OnDelete(DeleteBehavior.Cascade); // Ensures that deleting a User cascades to delete the Cart
+
+            // Add any additional configurations if necessary
+        }
     }
 }

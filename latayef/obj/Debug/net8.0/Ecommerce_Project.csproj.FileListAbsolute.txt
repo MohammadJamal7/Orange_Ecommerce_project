@@ -9,6 +9,9 @@ C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Ecommerce_Projec
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Humanizer.dll
+C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -24,6 +27,8 @@ C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.Extens
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

@@ -7,7 +7,7 @@
         public string ShippingAddress { get; set; }
 
         // Relationships
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public virtual User User { get; set; }
         public virtual ICollection<CartItem> Items { get; set; } = new List<CartItem>();
     }

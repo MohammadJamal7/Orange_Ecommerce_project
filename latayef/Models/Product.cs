@@ -9,6 +9,7 @@
         public string ImgPath { get; set; }
         public string Size { get; set; }
         public bool IsFavorite { get; set; }
+        public double Discount { get; set; }
 
         // Relationships
         public int CategoryId { get; set; }

@@ -1,6 +1,7 @@
 ﻿@{
     Layout = "~/Views/Shared/_General.cshtml";
 }
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+ 
 </head>
 <body class="goto-here">
     <div class="py-1 bg-primary">
@@ -34,7 +35,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Vegefoods</a>
+            <a class="navbar-brand" href="index.html">Frozen</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
@@ -52,7 +53,7 @@
                             <a class="dropdown-item" href="checkout.html">Checkout</a>
                         </div>
                     </li>
-                    <li class="nav-item active"><a class="nav-link" asp-action="about" asp-controller="Pages">About</a></li>
+                    <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                     <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
@@ -63,11 +64,12 @@
     </nav>
     <!-- END nav -->
 
-    <div class="hero-wrap hero-bread" style="background-image: url('~images/bg_1.jpg');">
+    <div class="hero-wrap hero-bread" style="background-image: url('@Url.Content("~/images/bg_1.jpg")');">
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>About us</span></p>
+                    <p class="breadcrumbs"><span class="mr-2"><a asp-action="Index">Home</a></span> <span>
+                        us</span></p>
                     <h1 class="mb-0 bread">About us</h1>
                 </div>
             </div>
@@ -77,7 +79,7 @@
     <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(~/images/about.jpg);">
+                <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image:url('@Url.Content("~/images/logo.jpg")');">
                     <a href="https://vimeo.com/45830194" class="icon popup-vimeo d-flex justify-content-center align-items-center">
                         <span class="icon-play"></span>
                     </a>
@@ -85,12 +87,12 @@
                 <div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
                     <div class="heading-section-bold mb-4 mt-md-5">
                         <div class="ml-md-0">
-                            <h2 class="mb-4">Welcome to Vegefoods an eCommerce website</h2>
+                            <h2 class="mb-4">Welcome to Frozen an eCommerce website</h2>
                         </div>
                     </div>
                     <div class="pb-md-5">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                        <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+                        <p>Our site offers a variety of fresh juices, signature cocktails, ice cream with unique flavors, in addition to delicious fruit salads. We are committed to using the finest natural ingredients to ensure a delicious and refreshing taste in every cup and plate. Whether you are looking for a cold drink on a hot day, a light dessert, or a healthy option, you will find everything you desire here.</p>
+
                         <p><a href="#" class="btn btn-primary">Shop now</a></p>
                     </div>
                 </div>
@@ -98,24 +100,7 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
-        <div class="container py-4">
-            <div class="row d-flex justify-content-center py-5">
-                <div class="col-md-6">
-                    <h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
-                    <span>Get e-mail updates about our latest shops and special offers</span>
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <form action="#" class="subscribe-form">
-                        <div class="form-group d-flex">
-                            <input type="text" class="form-control" placeholder="Enter email address">
-                            <input type="submit" value="Subscribe" class="submit px-3">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <br> </br>
 
     <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.jpg);">
         <div class="container">
@@ -164,9 +149,9 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section ftco-animate text-center">
-                    <span class="subheading">Testimony</span>
-                    <h2 class="mb-4">Our satisfied customer says</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                    <span class="subheading">partners</span>
+                    <h2 class="mb-4">A group of our partners</h2>
+                    <p>"We proudly work with a trusted group of partners who share our commitment to quality and innovation. Together, these partnerships allow us to bring you the best solutions, products, and services to meet your needs."</p>
                 </div>
             </div>
             <div class="row ftco-animate">
@@ -180,9 +165,9 @@
                                     </span>
                                 </div>
                                 <div class="text text-center">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Garreth Smith</p>
-                                    <span class="position">Marketing Manager</span>
+                                    <p class="mb-5 pl-4 line">It is a leading Saudi company in the food and beverage industry, established in 1977. Almarai is considered one of the largest and most famous food companies in the Middle East and the Arab world.</p>
+                                    <p class="name">Almarai </p>
+                                    <span class="position">Founding Partner</span>
                                 </div>
                             </div>
                         </div>
@@ -194,37 +179,23 @@
                                     </span>
                                 </div>
                                 <div class="text text-center">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Garreth Smith</p>
-                                    <span class="position">Interface Designer</span>
+                                    <p class="mb-5 pl-4 line">It is a leading company in the field of production and distribution of fresh fruits and vegetables, and aims to provide high-quality products directly from the farm to the consumer.</p>
+                                    <p class="name">Fresh fruits</p>
+                                    <span class="position">Principal Partner</span>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url('~/images/person_3.jpg')">
+                                <div class="user-img mb-5" style="background-image: url(images/person_3.jpg)">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
                                 </div>
                                 <div class="text text-center">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Garreth Smith</p>
-                                    <span class="position">UI Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Garreth Smith</p>
-                                    <span class="position">Web Developer</span>
+                                    <p class="mb-5 pl-4 line">A company specialized in providing fresh fruits and vegetables with high quality, directly from the farms to its customers, with a constant commitment to providing natural and healthy products throughout the year.</p>
+                                    <p class="name">METEA</p>
+                                    <span class="position">Principal Partner</span>
                                 </div>
                             </div>
                         </div>
@@ -237,11 +208,12 @@
                                 </div>
                                 <div class="text text-center">
                                     <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Garreth Smith</p>
-                                    <span class="position">System Analyst</span>
+                                    <p class="name"> Almarai</p>
+                                    <span class="position">Founding Partner</span>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
