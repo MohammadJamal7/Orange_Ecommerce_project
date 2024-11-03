@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Product>
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <!-- Adjust column sizes for different screen sizes -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-6 mb-4">
+            <div class="product" style="height: 100%; display: flex; flex-direction: column;">
+
+                <!-- Product image with a fixed aspect ratio -->
+                <a href="#" class="img-prod" style="position: relative; overflow: hidden; height: 200px; max-height: 200px;">
+                    <img class="img-fluid w-100 h-100" src="@Url.Content(product.ImgPath)" alt="Product Image" style="object-fit: cover;">
+                    <div class="overlay"></div>
+                </a>
+
+                <!-- Product details -->
+                <div class="text py-3 pb-4 px-3 text-center" style="flex-grow: 1;">
+                    <h3><a href="#">@product.Name</a></h3>
+                    <div class="d-flex justify-content-center">
+                        <div class="pricing">
+                            <p class="price"><span class="mr-2 price-dc">$@product.Price</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Action buttons -->
+                    <div class="bottom-area d-flex px-3 mt-3">
+                        <div class="m-auto d-flex">
+                            <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+                                <span><i class="ion-ios-menu"></i></span>
+                            </a>
+                            <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+                                <span><i class="ion-ios-cart"></i></span>
+                            </a>
+                            <a href="#" class="heart d-flex justify-content-center align-items-center">
+                                <span><i class="ion-ios-heart"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

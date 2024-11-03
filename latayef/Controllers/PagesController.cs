@@ -23,6 +23,7 @@ namespace latayef.Controllers
             return View(indexPageModel);
 
         }
+
         public IActionResult about()
         {
             return View();

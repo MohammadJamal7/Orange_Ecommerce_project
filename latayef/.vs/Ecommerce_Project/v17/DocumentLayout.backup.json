@@ -3,64 +3,140 @@
   "WorkspaceRootPath": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\pages\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\dash\\testio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\dash\\testio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\dash\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\dash\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\pages\\_productlistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\_productlistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\dash\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\dash\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\dash\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\dash\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\dash\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\dash\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\dash\\admins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\dash\\admins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\account\\reggister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\account\\reggister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\viewmodels\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:viewmodels\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\controllers\\dashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\dashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\viewmodels\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:viewmodels\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\pages\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\shared\\_productlistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\shared\\_productlistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\pages\\productsingle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\productsingle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\viewmodels\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:viewmodels\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\viewmodels\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:viewmodels\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\viewmodels\\indexpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:viewmodels\\indexpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\shared\\_general.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\shared\\_general.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\account\\reggister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\account\\reggister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\shared\\_registerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\shared\\_registerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\models\\productreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:models\\productreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\controllers\\reviewingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\reviewingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\.net projs\\latayef\\latayef\\views\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,189 +154,428 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Category\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\Create.cshtml",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Category\\Create.cshtml",
-              "RelativeToolTip": "Views\\Category\\Create.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T21:03:46.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_ProductListPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\_ProductListPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Pages\\_ProductListPartial.cshtml",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\_ProductListPartial.cshtml",
-              "RelativeToolTip": "Views\\Pages\\_ProductListPartial.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCAAAAAPAAAAAAAAAA==",
+              "Title": "Orders.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Orders.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dash\\Orders.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Orders.cshtml*",
+              "RelativeToolTip": "Views\\Dash\\Orders.cshtml*",
+              "ViewState": "AgIAAE4BAAAAAAAAAAAnwGEBAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T20:41:16.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "shop.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\shop.cshtml",
-              "RelativeDocumentMoniker": "Views\\Pages\\shop.cshtml",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\shop.cshtml*",
-              "RelativeToolTip": "Views\\Pages\\shop.cshtml*",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAF4AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T20:28:38.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "about.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\about.cshtml",
-              "RelativeDocumentMoniker": "Views\\Pages\\about.cshtml",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\about.cshtml",
-              "RelativeToolTip": "Views\\Pages\\about.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T19:40:37.523Z",
+              "WhenOpened": "2024-11-03T22:17:14.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Products\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Products\\Create.cshtml",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Products\\Create.cshtml",
-              "RelativeToolTip": "Views\\Products\\Create.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACkAAABAAAAAAAAAAA==",
+              "Title": "Admins.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Admins.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dash\\Admins.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Admins.cshtml",
+              "RelativeToolTip": "Views\\Dash\\Admins.cshtml",
+              "ViewState": "AgIAANYAAAAAAAAAAAAswOIAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T19:40:19.616Z",
+              "WhenOpened": "2024-11-03T22:16:42.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PagesController.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\PagesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PagesController.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\PagesController.cs",
-              "RelativeToolTip": "Controllers\\PagesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "DashController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\DashController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashController.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\DashController.cs",
+              "RelativeToolTip": "Controllers\\DashController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswBsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T19:37:40.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T19:26:59.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T19:26:10.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Data\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationContext.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Data\\ApplicationContext.cs",
-              "RelativeToolTip": "Data\\ApplicationContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T19:24:36.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAlwCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T19:24:02.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "productModel.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\ViewModels\\productModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\productModel.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\ViewModels\\productModel.cs",
-              "RelativeToolTip": "ViewModels\\productModel.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T19:22:30.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T19:21:53.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CategoryModel.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\ViewModels\\CategoryModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\CategoryModel.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\ViewModels\\CategoryModel.cs",
-              "RelativeToolTip": "ViewModels\\CategoryModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T19:21:35.644Z",
+              "WhenOpened": "2024-11-03T21:55:46.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T20:35:39.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_RegisterLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Shared\\_RegisterLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_RegisterLayout.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Shared\\_RegisterLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_RegisterLayout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T09:32:47.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\CartItem.cs",
+              "RelativeToolTip": "Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T09:25:22.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dash\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Index.cshtml",
+              "RelativeToolTip": "Views\\Dash\\Index.cshtml",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAqwAIBAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T21:56:52.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Testio.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Testio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dash\\Testio.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Testio.cshtml*",
+              "RelativeToolTip": "Views\\Dash\\Testio.cshtml*",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAcwAIBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T22:21:24.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dash\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Profile.cshtml",
+              "RelativeToolTip": "Views\\Dash\\Profile.cshtml",
+              "ViewState": "AgIAAMgCAAAAAAAAAAAAABADAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T22:19:15.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Products.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Products.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dash\\Products.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Dash\\Products.cshtml*",
+              "RelativeToolTip": "Views\\Dash\\Products.cshtml*",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAnwAABAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T22:18:20.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T08:10:13.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
               "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwCkAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAhwFUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T19:18:56.575Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T21:16:38.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T09:19:21.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProductReview.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\ProductReview.cs",
+              "RelativeDocumentMoniker": "Models\\ProductReview.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\ProductReview.cs",
+              "RelativeToolTip": "Models\\ProductReview.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T09:14:14.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T08:50:31.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "productSingle.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\productSingle.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\productSingle.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\productSingle.cshtml",
+              "RelativeToolTip": "Views\\Pages\\productSingle.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T08:36:06.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IndexPageModel.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\ViewModels\\IndexPageModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\IndexPageModel.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\ViewModels\\IndexPageModel.cs",
+              "RelativeToolTip": "ViewModels\\IndexPageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T08:35:44.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ReviewingController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\ReviewingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReviewingController.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\ReviewingController.cs",
+              "RelativeToolTip": "Controllers\\ReviewingController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T08:18:45.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_General.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Shared\\_General.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_General.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Shared\\_General.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_General.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAB0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T08:12:28.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Views\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-03T08:08:26.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Create.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "Views\\Category\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T21:03:46.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ProductListPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Shared\\_ProductListPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ProductListPartial.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Shared\\_ProductListPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ProductListPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T20:41:16.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "shop.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\shop.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\shop.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\shop.cshtml",
+              "RelativeToolTip": "Views\\Pages\\shop.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAADwv2oAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T20:28:38.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "about.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\about.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\about.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Pages\\about.cshtml",
+              "RelativeToolTip": "Views\\Pages\\about.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T19:40:37.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Create.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "Views\\Products\\Create.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAEIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T19:40:19.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PagesController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\PagesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PagesController.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\PagesController.cs",
+              "RelativeToolTip": "Controllers\\PagesController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAADwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T19:37:40.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAG8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T19:26:10.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Data\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Data\\ApplicationContext.cs",
+              "RelativeToolTip": "Data\\ApplicationContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T19:24:36.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAewEwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T19:24:02.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "productModel.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\ViewModels\\productModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\productModel.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\ViewModels\\productModel.cs",
+              "RelativeToolTip": "ViewModels\\productModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T19:22:30.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T19:21:53.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoryModel.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\ViewModels\\CategoryModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CategoryModel.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\ViewModels\\CategoryModel.cs",
+              "RelativeToolTip": "ViewModels\\CategoryModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T19:21:35.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Reggister.cshtml",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Views\\Account\\Reggister.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Reggister.cshtml",
@@ -268,8 +583,7 @@
               "RelativeToolTip": "Views\\Account\\Reggister.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAALgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T19:06:48.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T19:06:48.782Z"
             }
           ]
         }
