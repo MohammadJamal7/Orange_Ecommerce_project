@@ -6,6 +6,7 @@
         public decimal TotalPrice { get; set; }
         public string ShippingAddress { get; set; }
 
+
         // Relationships
         public string UserId { get; set; }
         public virtual User User { get; set; }

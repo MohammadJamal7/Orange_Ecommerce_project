@@ -816,6 +816,86 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\262a0e80-51a0-4698-b79a-ed2b75b489e6_wifi.svg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\4c206322-007c-49db-b201-6643f3ea5723_IMG-20241101-WA0035.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce_Project</BasePath>
+      <RelativePath>images/categories/4c206322-007c-49db-b201-6643f3ea5723_IMG-20241101-WA0035.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\4c206322-007c-49db-b201-6643f3ea5723_IMG-20241101-WA0035.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\621b4df2-b371-4fbd-bff8-b0946ba63511_IMG-20241101-WA0033.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce_Project</BasePath>
+      <RelativePath>images/categories/621b4df2-b371-4fbd-bff8-b0946ba63511_IMG-20241101-WA0033.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\621b4df2-b371-4fbd-bff8-b0946ba63511_IMG-20241101-WA0033.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\65a22ee0-2bfc-40aa-90e5-b981a89f78ae_light-mode_1.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce_Project</BasePath>
+      <RelativePath>images/categories/65a22ee0-2bfc-40aa-90e5-b981a89f78ae_light-mode_1.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\65a22ee0-2bfc-40aa-90e5-b981a89f78ae_light-mode_1.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\698fffcf-2bdf-4227-bc50-85875d31c2ac_IMG-20241101-WA0034.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce_Project</BasePath>
+      <RelativePath>images/categories/698fffcf-2bdf-4227-bc50-85875d31c2ac_IMG-20241101-WA0034.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\698fffcf-2bdf-4227-bc50-85875d31c2ac_IMG-20241101-WA0034.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\e65a0754-3eb4-4db0-bf8c-6ce28ce36fe7_IMG-20241101-WA0032.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce_Project</BasePath>
+      <RelativePath>images/categories/e65a0754-3eb4-4db0-bf8c-6ce28ce36fe7_IMG-20241101-WA0032.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\categories\e65a0754-3eb4-4db0-bf8c-6ce28ce36fe7_IMG-20241101-WA0032.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\category-1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Ecommerce_Project</SourceId>
@@ -1360,6 +1440,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\02e65da6-ec8d-4e7d-b174-3e79ba6d15d1_check-circle (3).svg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\49aa1ff6-1cf7-4e16-8d2b-92108ee5aa2f_IMG-20241101-WA0032.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce_Project</BasePath>
+      <RelativePath>images/products/49aa1ff6-1cf7-4e16-8d2b-92108ee5aa2f_IMG-20241101-WA0032.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\49aa1ff6-1cf7-4e16-8d2b-92108ee5aa2f_IMG-20241101-WA0032.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\50953747-8953-44bd-bf9e-38ad98748623_logo-color.png))">
       <SourceType>Package</SourceType>
       <SourceId>Ecommerce_Project</SourceId>
@@ -1376,6 +1472,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\50953747-8953-44bd-bf9e-38ad98748623_logo-color.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\57f7a713-00a5-43fd-928a-5be79f88faaf_GettyImages-1291886933-e1624308433688.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce_Project</BasePath>
+      <RelativePath>images/products/57f7a713-00a5-43fd-928a-5be79f88faaf_GettyImages-1291886933-e1624308433688.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\57f7a713-00a5-43fd-928a-5be79f88faaf_GettyImages-1291886933-e1624308433688.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\7138e4f9-6734-40df-8a54-fd81125a0c10_wifi.svg))">
       <SourceType>Package</SourceType>
       <SourceId>Ecommerce_Project</SourceId>
@@ -1391,6 +1503,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\7138e4f9-6734-40df-8a54-fd81125a0c10_wifi.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\966cf89d-daff-4c9b-afa2-d7082edb0eb6_night-mode-removebg-preview.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce_Project</BasePath>
+      <RelativePath>images/products/966cf89d-daff-4c9b-afa2-d7082edb0eb6_night-mode-removebg-preview.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\966cf89d-daff-4c9b-afa2-d7082edb0eb6_night-mode-removebg-preview.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\b1546620-50a5-4357-9e4e-b9e658f00035_check-circle (3).svg))">
       <SourceType>Package</SourceType>

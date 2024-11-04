@@ -18,8 +18,8 @@ namespace latayef.Controllers
         {
             IndexPageModel indexPageModel = new IndexPageModel();
             indexPageModel.testimonials = await _context.Testimonials.ToListAsync();
-
-
+            indexPageModel.products = await _context.Products.ToListAsync();
+            indexPageModel.categories = await _context.Categories.ToListAsync();
             return View(indexPageModel);
 
         }

@@ -26,7 +26,7 @@ namespace Ecommerce_Project.Controllers
             _context.Testimonials.Add(testio.testimonial);
             await _context.SaveChangesAsync();
             
-           return RedirectToAction("Index", "Pages");
+            return RedirectToAction("Index", "Pages"); 
             
            
         }
