@@ -1,7 +1,7 @@
 ﻿@{
     Layout = null;
 }
-
+@model List<latayef.Models.User>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,162 +31,159 @@
     <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
 
     <style>
-            /* Container for the buttons */
-            .button-container {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding: 10px;
-              border-radius: 5px;
-            }
-
-            /* Style for each button */
-            .action-button {
-              background-color: #e0e0e0; /* Gray background for the button */
-              color: #333; /* Text color */
-              border: none;
-              padding: 4px 10px;
-              margin: 0 5px; /* Small space between buttons */
-              font-size: 12px;
-              cursor: pointer;
-              border-radius: 4px;
-              transition: background-color 0.3s;
-            }
-
-            /* Hover effect */
-            .action-button:hover {
-              background-color: #d0d0d0;
-            }
-
-
-
-
-         /* Container for the buttons */
+        /* Container for the buttons */
         .button-container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 10px;
-          border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         /* Style for each button */
         .action-button {
-          background-color: #e0e0e0; /* Gray background for the button */
-          color: #333; /* Text color */
-          border: none;
-          padding: 6px 12px; /* Increased padding */
-          margin: 0 5px; /* Small space between buttons */
-          font-size: 14px; /* Slightly larger font */
-          cursor: pointer;
-          border-radius: 4px;
-          transition: background-color 0.3s, transform 0.3s; /* Add scale effect */
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            background-color: #e0e0e0; /* Gray background for the button */
+            color: #333; /* Text color */
+            border: none;
+            padding: 4px 10px;
+            margin: 0 5px; /* Small space between buttons */
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
         }
 
-        .action-button:hover {
-          background-color: #d0d0d0;
-          transform: scale(1.05); /* Slightly enlarge on hover */
+            /* Hover effect */
+            .action-button:hover {
+                background-color: #d0d0d0;
+            }
+
+
+
+
+        /* Container for the buttons */
+        .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 5px;
         }
+
+        /* Style for each button */
+        .action-button {
+            background-color: #e0e0e0; /* Gray background for the button */
+            color: #333; /* Text color */
+            border: none;
+            padding: 6px 12px; /* Increased padding */
+            margin: 0 5px; /* Small space between buttons */
+            font-size: 14px; /* Slightly larger font */
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s, transform 0.3s; /* Add scale effect */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+            .action-button:hover {
+                background-color: #d0d0d0;
+                transform: scale(1.05); /* Slightly enlarge on hover */
+            }
 
         .modal {
-          display: none; /* Hidden by default */
-          position: fixed; /* Stay in place */
-          left: 0;
-          top: 0;
-          width: 100%; /* Full width */
-          height: 100%; /* Full height */
-          overflow: auto; /* Enable scroll if needed */
-          background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
-
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
         }
 
         .modal-content {
-          /* z-index: 1;  */
+            /* z-index: 1;  */
 
-          background-color: #fff;
-          margin: 10% auto; /* Centered with less top margin */
-          padding: 20px;
-          border: 1px solid #888;
-          border-radius: 8px;
-          max-width: 800px;
-          width: 70%;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+            background-color: #fff;
+            margin: 10% auto; /* Centered with less top margin */
+            padding: 20px;
+            border: 1px solid #888;
+            border-radius: 8px;
+            max-width: 800px;
+            width: 70%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow */
         }
 
         .form-title {
-          text-align: center;
-          margin-bottom: 15px;
-          font-size: 18px; /* Increased font size for title */
-          font-weight: bold; /* Bold title */
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 18px; /* Increased font size for title */
+            font-weight: bold; /* Bold title */
         }
 
         .form-group {
-          margin-bottom: 15px; /* Increased space between groups */
+            margin-bottom: 15px; /* Increased space between groups */
         }
 
         label {
-          display: block;
-          color: #555; /* Darker label color for contrast */
-          margin-bottom: 15px;
-          font-family: 'Arial', sans-serif; /* Modern font */
+            display: block;
+            color: #555; /* Darker label color for contrast */
+            margin-bottom: 15px;
+            font-family: 'Arial', sans-serif; /* Modern font */
         }
 
         input[type="text"],
         input[type="email"],
         input[type="password"] {
-          width: 100%;
-          padding: 12px; /* Increased padding */
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          font-size: 14px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
-          transition: border-color 0.3s; /* Smooth transition */
+            width: 100%;
+            padding: 12px; /* Increased padding */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+            transition: border-color 0.3s; /* Smooth transition */
         }
 
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        input[type="password"]:focus {
-          border-color: #85ab85;
-        }
+            input[type="text"]:focus,
+            input[type="email"]:focus,
+            input[type="password"]:focus {
+                border-color: #85ab85;
+            }
 
         .error-message {
-          color: red;
-          font-size: 12px;
-          margin-top: 5px;
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
         }
 
         .form-submit {
-          background-color: #4fd85f;
-          color: white;
-          border: none;
-          padding: 12px; /* Increased padding */
-          border-radius: 15px;
-          cursor: pointer;
-          width: 100%; /* Full width */
-          font-size: 16px; /* Larger font */
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow */
+            background-color: #4fd85f;
+            color: white;
+            border: none;
+            padding: 12px; /* Increased padding */
+            border-radius: 15px;
+            cursor: pointer;
+            width: 100%; /* Full width */
+            font-size: 16px; /* Larger font */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow */
         }
 
-        .form-submit:hover {
-          background-color: #20b551;
-        }
+            .form-submit:hover {
+                background-color: #20b551;
+            }
 
         .close {
-          color: #aaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
         }
 
-        .close:hover,
-        .close:focus {
-          color: black;
-          text-decoration: none;
-          cursor: pointer;
-        }
-
-
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
 
     </style>
 </head>
@@ -439,38 +436,31 @@
                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">User Name</th>
                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Email</th>
                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Phone Number</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">City</th>
                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Address</th>
-                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Registration Date</th>
                                             <!-- Removed Status Column -->
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">User 1</h6>
+                                        <!--for -->
+                                        @foreach (var user in Model)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex px-2 py-1">
+                                                        <div class="d-flex flex-column justify-content-center">
+                                                            <h6 class="mb-0 text-sm">User 1</h6>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td><p class="text-xs font-weight-bold">user1@example.com</p></td>
-                                            <td><p class="text-xs font-weight-bold">1234567890</p></td>
-                                            <td><p class="text-xs font-weight-bold">Address 1</p></td>
-                                            <td><p class="text-xs font-weight-bold">01/01/2024</p></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">User 2</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td><p class="text-xs font-weight-bold">user2@example.com</p></td>
-                                            <td><p class="text-xs font-weight-bold">0987654321</p></td>
-                                            <td><p class="text-xs font-weight-bold">Address 2</p></td>
-                                            <td><p class="text-xs font-weight-bold">01/02/2024</p></td>
-                                        </tr>
+                                                </td>
+                                                <td><p class="text-xs font-weight-bold">@user.Name</p></td>
+                                                <td><p class="text-xs font-weight-bold">@user.PhoneNumber</p></td>
+                                                <td><p class="text-xs font-weight-bold">@user.City</p></td>
+                                                <td><p class="text-xs font-weight-bold">@user.Address</p></td>
+                                            </tr>
+                                        }
+
+
                                     </tbody>
                                 </table>
                             </div>

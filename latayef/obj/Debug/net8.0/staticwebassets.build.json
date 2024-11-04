@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FmGc90UU1M4ak6qJtLnrL9zj55vavW2cqEPaEigSMS8=",
+  "Hash": "2301Q+LtADAYxLrGvcsN1JeGQf+KvFMsCdnrI/MwYFo=",
   "Source": "Ecommerce_Project",
   "BasePath": "_content/Ecommerce_Project",
   "Mode": "Default",
@@ -6057,6 +6057,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\7138e4f9-6734-40df-8a54-fd81125a0c10_wifi.svg"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\products\\a07136d9-2215-447e-bd4f-60ab9e2d86dc_logo-icon-white.png",
+      "SourceId": "Ecommerce_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\",
+      "BasePath": "_content/Ecommerce_Project",
+      "RelativePath": "images/products/a07136d9-2215-447e-bd4f-60ab9e2d86dc_logo-icon-white.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\a07136d9-2215-447e-bd4f-60ab9e2d86dc_logo-icon-white.png"
     },
     {
       "Identity": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\wwwroot\\images\\products\\b1546620-50a5-4357-9e4e-b9e658f00035_check-circle (3).svg",

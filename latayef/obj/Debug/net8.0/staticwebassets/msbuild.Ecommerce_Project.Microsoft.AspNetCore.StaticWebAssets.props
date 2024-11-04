@@ -5088,6 +5088,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\7138e4f9-6734-40df-8a54-fd81125a0c10_wifi.svg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\a07136d9-2215-447e-bd4f-60ab9e2d86dc_logo-icon-white.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Ecommerce_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Ecommerce_Project</BasePath>
+      <RelativePath>images/products/a07136d9-2215-447e-bd4f-60ab9e2d86dc_logo-icon-white.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\a07136d9-2215-447e-bd4f-60ab9e2d86dc_logo-icon-white.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\b1546620-50a5-4357-9e4e-b9e658f00035_check-circle (3).svg))">
       <SourceType>Package</SourceType>
       <SourceId>Ecommerce_Project</SourceId>

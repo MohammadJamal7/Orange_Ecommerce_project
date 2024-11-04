@@ -34,7 +34,6 @@ namespace latayef.Data
                 .HasForeignKey<Cart>(c => c.UserId)
                 .OnDelete(DeleteBehavior.Cascade); // Ensures that deleting a User cascades to delete the Cart
 
-            // Add any additional configurations if necessary
-        }
+		}
     }
 }

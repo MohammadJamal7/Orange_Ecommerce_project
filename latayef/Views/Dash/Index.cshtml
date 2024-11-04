@@ -1,8 +1,7 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
-
+@model List<Ecommerce_Project.ViewModels.CategoryViewModel>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,132 +30,133 @@
     <style>
         /* Container for the buttons */
         .button-container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 10px;
-          border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         /* Style for each button */
         .action-button {
-          background-color: #e0e0e0; /* Gray background for the button */
-          color: #333; /* Text color */
-          border: none;
-          padding: 4px 10px;
-          margin: 0 5px; /* Small space between buttons */
-          font-size: 12px;
-          cursor: pointer;
-          border-radius: 4px;
-          transition: background-color 0.3s;
+            background-color: #e0e0e0; /* Gray background for the button */
+            color: #333; /* Text color */
+            border: none;
+            padding: 4px 10px;
+            margin: 0 5px; /* Small space between buttons */
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
         }
 
-        /* Hover effect */
-        .action-button:hover {
-          background-color: #d0d0d0;
-        }
+            /* Hover effect */
+            .action-button:hover {
+                background-color: #d0d0d0;
+            }
 
 
         body {
-                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                  background-color: #eef2f3;
-                  margin: 0;
-                  padding: 20px;
-              }
-
-              .container {
-                  display: none;
-                  position: fixed;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  max-width: 800px;
-                  width: 90%;
-                  max-height: 80%;
-                  overflow-y: auto;
-                  background: white;
-                  padding: 30px;
-                  border-radius: 10px;
-                  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-                  z-index: 1000;
-              }
-
-              .overlay {
-                  display: none;
-                  position: fixed;
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                  background: rgba(0, 0, 0, 0.5);
-                  z-index: 999;
-              }
-
-              h1 {
-                  text-align: center;
-                  color: #4cae4c;
-                  margin-bottom: 20px;
-                  font-size: 2em;
-              }
-
-              form {
-                  display: flex;
-                  flex-direction: column;
-              }
-
-              label {
-                  margin: 15px 0 5px;
-                  font-weight: bold;
-              }
-
-              input, textarea, select {
-                  padding: 12px;
-                  border-radius: 5px;
-                  border: 1px solid #ddd;
-                  transition: border 0.3s;
-              }
-
-              input:focus, textarea:focus, select:focus {
-                  border: 1px solid #4cae4c;
-                  outline: none;
-              }
-
-              button {
-                  margin-top: 20px;
-                  padding: 12px;
-                  border: none;
-                  background-color: #4cae4c;
-                  color: white;
-                  border-radius: 5px;
-                  cursor: pointer;
-                  font-size: 1.1em;
-                  transition: background-color 0.3s, transform 0.3s;
-              }
-
-              button:hover {
-                  background-color: #45a049;
-                  transform: translateY(-2px);
-              }
-
-              .action-button {
-          background-color: #e0e0e0; /* Gray background for the button */
-          color: #333; /* Text color */
-          border: none;
-          padding: 4px 10px;
-          margin: 0 5px; /* Small space between buttons */
-          font-size: 12px;
-          cursor: pointer;
-          border-radius: 4px;
-          transition: background-color 0.3s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 20px;
         }
 
-        /* Hover effect */
-        .action-button:hover {
-          background-color: #d0d0d0;
+        .container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 800px;
+            width: 90%;
+            max-height: 80%;
+            overflow-y: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
-              button:active {
-                  transform: translateY(0);
-              }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4cae4c;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            transition: border 0.3s;
+        }
+
+            input:focus, textarea:focus, select:focus {
+                border: 1px solid #4cae4c;
+                outline: none;
+            }
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            border: none;
+            background-color: #4cae4c;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+            button:hover {
+                background-color: #45a049;
+                transform: translateY(-2px);
+            }
+
+        .action-button {
+            background-color: #e0e0e0; /* Gray background for the button */
+            color: #333; /* Text color */
+            border: none;
+            padding: 4px 10px;
+            margin: 0 5px; /* Small space between buttons */
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+            /* Hover effect */
+            .action-button:hover {
+                background-color: #d0d0d0;
+            }
+
+        button:active {
+            transform: translateY(0);
+        }
 
     </style>
 </head>
@@ -454,102 +454,35 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/small-logos/logo-xd.svg" class="avatar avatar-sm me-3" alt="xd">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Product1</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group mt-2">
-                                                    <P class="text-xs font-weight-bold">Category1</P>
-                                                </div>
-                                            </td>
 
-                                            <td class="align-middle">
-                                                <div class="button-container">
-                                                    <button class="action-button" onclick="editItem()">Edit</button>
-                                                    <button class="action-button" onclick="removeItem()">Remove</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/small-logos/logo-atlassian.svg" class="avatar avatar-sm me-3" alt="atlassian">
+                                        @foreach (var category in Model)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex px-2 py-1">
+                                                        <div>
+                                                            <img src="@category.imagePath" class="avatar avatar-sm me-3" alt="xd">
+                                                        </div>
+                                                        <div class="d-flex flex-column justify-content-center">
+                                                            <h6 class="mb-0 text-sm">@category.Category.Name</h6>
+                                                        </div>
                                                     </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Product2</h6>
+                                                </td>
+                                                <td>
+                                                    <div class="avatar-group mt-2">
+                                                        <P class="text-xs font-weight-bold">@category.ProductCount</P>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group mt-2">
-                                                    <P class="text-xs font-weight-bold">Category2</P>
-                                                </div>
+                                                </td>
 
-                                            <td class="align-middle">
-                                                <div class="button-container">
-                                                    <button class="action-button" onclick="editItem()">Edit</button>
-                                                    <button class="action-button" onclick="removeItem()">Remove</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/small-logos/logo-slack.svg" class="avatar avatar-sm me-3" alt="team7">
+                                                <td class="align-middle">
+                                                    <div class="button-container">
+                                                        <button class="action-button" onclick="editItem()">Edit</button>
+                                                        <button class="action-button" onclick="removeItem()">Remove</button>
                                                     </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Product3</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group mt-2">
-                                                    <P class="text-xs font-weight-bold">Category3</P>
-                                                </div>
-                                            </td>
+                                                </td>
+                                            </tr>
 
-                                            <td class="align-middle">
-                                                <div class="button-container">
-                                                    <button class="action-button" onclick="editItem()">Edit</button>
-                                                    <button class="action-button" onclick="removeItem()">Remove</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm me-3" alt="spotify">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Product4</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group mt-2">
-                                                    <P class="text-xs font-weight-bold">Category4</P>
-                                                </div>
-                                            </td>
-
-                                            <td class="align-middle">
-                                                <div class="button-container">
-                                                    <button class="action-button" onclick="editItem()">Edit</button>
-                                                    <button class="action-button" onclick="removeItem()">Remove</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-
+                                        }
 
                                     </tbody>
                                 </table>
