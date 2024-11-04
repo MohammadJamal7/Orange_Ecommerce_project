@@ -31,7 +31,7 @@ namespace Ecommerce_Project.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
-           
+
             if (ModelState.IsValid)
             {
                 // Check if a user with the same email already exists
@@ -51,7 +51,7 @@ namespace Ecommerce_Project.Controllers
                     State = model.State,
                     City = model.City,
                     Address = model.Adress,
-                    
+
                 };
 
                 // Attempt to create the user with the provided password

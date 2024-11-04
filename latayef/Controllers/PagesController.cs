@@ -14,19 +14,25 @@ namespace latayef.Controllers
     {
 
         private readonly ApplicationContext _context;
+<<<<<<< HEAD
         private readonly UserManager<User> _userManager;
         public PagesController(ApplicationContext context, UserManager<User> userManager)
         {
             _context = context;
             _userManager = userManager;
+=======
+        public PagesController(ApplicationContext context)
+        {
+            _context = context;
+>>>>>>> 446c9ae5bd4c662a4c25b240455339df8bacdd92
         }
         
         public async Task<IActionResult> Index()
         {
             IndexPageModel indexPageModel = new IndexPageModel();
             indexPageModel.testimonials = await _context.Testimonials.ToListAsync();
-
-
+            indexPageModel.products = await _context.Products.ToListAsync();
+            indexPageModel.categories = await _context.Categories.ToListAsync();
             return View(indexPageModel);
 
         }
@@ -47,25 +53,30 @@ namespace latayef.Controllers
             return View();
         }
 
-        public IActionResult cart() {
+        public IActionResult cart()
+        {
             return View();
         }
 
-        public IActionResult checkout() {
+        public IActionResult checkout()
+        {
             return View();
         }
 
 
-        public IActionResult contact() {
+        public IActionResult contact()
+        {
 
             return View();
         }
 
-        public IActionResult productSingle() {
+        public IActionResult productSingle()
+        {
             return View();
         }
 
-        public async Task<IActionResult> shop() {
+        public async Task<IActionResult> shop()
+        {
             List<Category> categories = await _context.Categories.ToListAsync();
 
             return View(categories);
