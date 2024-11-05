@@ -1,8 +1,7 @@
 ﻿@{
     Layout = null;
 }
-
-
+@model List<Testimonial>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,36 +25,9 @@
     <!-- Nepcha Analytics (nepcha.com) -->
     <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
     <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        .review-card {
-            border: 1px solid #ddf0db;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 5px;
-            text-align: center;
-            margin: 0 20px;
-        }
-
-            .review-card .action-button {
-                font-family: 'Times New Roman', Times, serif;
-                background-color: #28a745;
-                color: #fff;
-                border: none;
-                padding: 3px 10px;
-                font-size: 0.875rem;
-                border-radius: 4px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
-
-                .review-card .action-button.reject {
-                    background-color: #dc3545;
-                }
-
-                .review-card .action-button:hover {
-                    opacity: 0.8;
-                }
         /* Container for the buttons */
         .button-container {
             display: flex;
@@ -185,6 +157,119 @@
         button:active {
             transform: translateY(0);
         }
+
+
+        .container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 800px;
+            width: 90%;
+            max-height: 80%;
+            overflow-y: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .card h1 {
+            text-align: center;
+            color: #4cae4c;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            border: none;
+            background-color: #4cae4c;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+            button:hover {
+                background-color: #45a049;
+                transform: translateY(-2px);
+            }
+
+            button:active {
+                transform: translateY(0);
+            }
+
+        #orderContainer h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #50ca45;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+
+
+
+            .card h3 {
+                font-size: 1.2em;
+                color: #333;
+                margin-bottom: 10px;
+                border-bottom: 2px solid #50ca45;
+                padding-bottom: 5px;
+            }
+
+            .card p, .card ul, .card li {
+                font-size: 1em;
+                color: #555;
+            }
+
+            .card ul {
+                list-style: disc;
+                padding-left: 20px;
+            }
+
+            .card li {
+                margin: 5px 0;
+            }
+
+        .message-column {
+            max-width: 150px; /* Adjust width as needed */
+        }
+
+        .message-content {
+            display: inline-block;
+            max-width: 100%; /* Ensures it fills the cell width */
+            white-space: nowrap; /* Prevents text wrapping */
+            overflow: hidden; /* Hides overflowing text */
+            text-overflow: ellipsis; /* Shows ellipsis (...) for overflowed text */
+            cursor: pointer; /* Indicates it's clickable (optional) */
+        }
+
     </style>
 </head>
 
@@ -261,7 +346,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active " href="@Url.Action("Testio", "Dash")">
+                    <a class="nav-link  active" href="@Url.Action("Testio", "Dash")">
                         <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>credit-card</title>
@@ -334,101 +419,70 @@
                         <div class="card-header pb-0">
                             <div class="row">
                                 <div class="col-lg-12 col-7 d-flex flex-row justify-content-lg-between">
-                                    <h6>Testimonail and Reviews</h6>
+                                    <h6>Testios</h6>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="card-body px-0 pb-2">
-                            <div class="row">
-                                <!-- User Review Card 2 -->
-                                <div class="col-md-4">
-                                    <div class="card review-card mb-4">
-                                        <div class="card-body ">
-                                            <h6 class="mb-1">User Name 2</h6>
-                                            <p class="text-xs mt-2">This is another review from a different user. They might provide different insights or suggestions.</p>
-                                            <div class="button-container d-flex justify-content-center mt-3">
-                                                <button class="action-button me-2" onclick="acceptReview(this)">Accept</button>
-                                                <button class="action-button reject" onclick="rejectReview(this)">Reject</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- User Review Card 3 -->
-                                <div class="col-md-4">
-                                    <div class="card review-card mb-4">
-                                        <div class="card-body ">
-                                            <h6 class="mb-1">User Name 3</h6>
-                                            <p class="text-xs mt-2">This is another review from a different user. They might provide different insights or suggestions.</p>
-                                            <div class="button-container d-flex justify-content-center mt-3">
-                                                <button class="action-button me-2" onclick="acceptReview(this)">Accept</button>
-                                                <button class="action-button reject" onclick="rejectReview(this)">Reject</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- User Review Card 4 -->
-                                <div class="col-md-4">
-                                    <div class="card review-card mb-4">
-                                        <div class="card-body ">
-                                            <h6 class="mb-1">User Name 4</h6>
-                                            <p class="text-xs mt-2">This is another review from a different user. They might provide different insights or suggestions.</p>
-                                            <div class="button-container d-flex justify-content-center mt-3">
-                                                <button class="action-button me-2" onclick="acceptReview(this)">Accept</button>
-                                                <button class="action-button reject" onclick="rejectReview(this)">Reject</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add more review cards as needed -->
+                            <div class="table-responsive">
+                                <table class="table align-items-center mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Message</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var testio in Model)
+                                        {
+                                            <tr id="testimonial-@testio.Id">
+                                                <td>@testio.Id</td>
+                                                <td class="message-column">
+                                                    <span class="message-content" data-toggle="tooltip" data-placement="top" title="@testio.Review">
+                                                        @testio.Review
+                                                    </span>
+                                                </td>
+                                                <td>@testio.Name</td>
+                                                <td>@testio.Email</td>
+                                                <td>
+                                                    @if (testio.IsApproved == null)
+                                                    {
+                                                        <form method="post" asp-action="ApproveTestimonial" asp-route-id="@testio.Id">
+                                                            <button type="submit" class="btn btn-outline-success approve-button" data-id="@testio.Id">
+                                                                <i class="fas fa-check"></i> Approve
+                                                            </button>
+                                                        </form>
+                                                        <form method="post" asp-action="RejectTestimonial" asp-route-id="@testio.Id">
+                                                            <button type="submit" class="btn btn-outline-danger reject-button" data-id="@testio.Id">
+                                                                <i class="fas fa-times"></i> Reject
+                                                            </button>
+                                                        </form>
+                                                    }
+                                                    else if (testio.IsApproved == true)
+                                                    {
+                                                        <span class="text-success">Accepted</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-danger">Rejected</span>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+          
 
-
-        <div class="overlay" id="overlay" onclick="closeForm()"></div>
-
-        <div class="container" id="productContainer">
-            <h1>Add New Product</h1>
-            <form id="productForm">
-                <label for="productName">Product Name:</label>
-                <input type="text" id="productName" required>
-
-                <label for="productCategory">Product Category:</label>
-                <select id="productCategory" required>
-                    <option value="" disabled selected>Select a category</option>
-                    <option value="juices">Juices</option>
-                    <option value="cocktails">Cocktails</option>
-                    <option value="fruit_salads">Fruit Salads</option>
-                    <option value="ice_cream">Ice Cream</option>
-                </select>
-
-                <label for="productSize">Product Size:</label>
-                <select id="productSize" required>
-                    <option value="" disabled selected>Select a size</option>
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                </select>
-
-                <label for="productPrice">Product Price:</label>
-                <input type="number" id="productPrice" required>
-
-                <label for="productDescription">Product Description:</label>
-                <textarea id="productDescription" required></textarea>
-
-                <label for="productImage">Product Image:</label>
-                <input type="file" id="productImage" accept="image/*" required>
-
-                <button type="submit">Add Product</button>
-            </form>
-        </div>
-
-        </div>
     </main>
     <div class="fixed-plugin">
         <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
@@ -502,90 +556,76 @@
     <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script>
-        var win = navigator.platform.indexOf('Win') > -1;
-        if (win && document.querySelector('#sidenav-scrollbar')) {
-          var options = {
-            damping: '0.5'
-          }
-          Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-        }
+       
     </script>
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="../assets/js/soft-ui-dashboard.min.js?v=1.1.0"></script>
     <script>
-            function openForm() {
-                document.getElementById('productContainer').style.display = 'block';
-                document.getElementById('overlay').style.display = 'block';
-            }
+        $(document).ready(function () {
+            // Approve Button Click Event
+            $('.approve-button').on('click', function (e) {
+                e.preventDefault();
+                var id = $(this).data('id');
 
-            function closeForm() {
-                document.getElementById('productContainer').style.display = 'none';
-                document.getElementById('overlay').style.display = 'none';
-            }
-
-            document.getElementById('productForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-
-                const productName = document.getElementById('productName').value;
-                const productCategory = document.getElementById('productCategory').value;
-                const productSize = document.getElementById('productSize').value;
-                const productPrice = document.getElementById('productPrice').value;
-                const productDescription = document.getElementById('productDescription').value;
-                const productImageInput = document.getElementById('productImage');
-
-                const file = productImageInput.files[0];
-                const reader = new FileReader();
-
-                reader.onload = function(e) {
-                    console.log(`
-                        Product Name: ${productName}
-                        Product Category: ${productCategory}
-                        Product Size: ${productSize}
-                        Product Price: ${productPrice} د.أ
-                        Product Description: ${productDescription}
-                        Product Image: ${e.target.result}
-                    `);
-                }
-
-                if (file) {
-                    reader.readAsDataURL(file);
-                }
-
-                document.getElementById('productForm').reset();
-                closeForm(); // Close the modal after form submission
+                $.ajax({
+                    url: '@Url.Action("ApproveTestimonial", "Dash")',
+                    type: 'POST',
+                    data: { id: id },
+                    success: function (response) {
+                        if (response.success) {
+                            // Update the row with the "Accepted" status
+                            var row = $('#testimonial-' + id);
+                            row.html('<td colspan="5" class="text-success">Accepted</td>');
+                        } else {
+                            alert(response.message || "Error approving testimonial.");
+                        }
+                    },
+                    error: function () {
+                        alert("An error occurred while processing the request.");
+                    }
+                });
             });
 
+            // Reject Button Click Event
+            $('.reject-button').on('click', function (e) {
+                e.preventDefault();
+                var id = $(this).data('id');
 
-            function acceptReview(button) {
-            const cardBody = button.closest('.card-body');
-            const buttonContainer = cardBody.querySelector(".button-container");
-
-            const statusMessage = document.createElement("p");
-            statusMessage.className = "status-message text-success";
-            statusMessage.innerText = "Review Accepted";
-
-            buttonContainer.innerHTML = "";
-            buttonContainer.appendChild(statusMessage);
-
+                $.ajax({
+                    url: '@Url.Action("RejectTestimonial", "Dash")',
+                    type: 'POST',
+                    data: { id: id },
+                    success: function (response) {
+                        if (response.success) {
+                            // Update the row with the "Rejected" status
+                            var row = $('#testimonial-' + id);
+                            row.html('<td colspan="5" class="text-danger">Rejected</td>');
+                        } else {
+                            alert(response.message || "Error rejecting testimonial.");
+                        }
+                    },
+                    error: function () {
+                        alert("An error occurred while processing the request.");
+                    }
+                });
+            });
+        });
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
         }
-
-        function rejectReview(button) {
-            const cardBody = button.closest('.card-body');
-            const buttonContainer = cardBody.querySelector(".button-container");
-
-            const statusMessage = document.createElement("p");
-            statusMessage.className = "status-message text-danger";
-            statusMessage.innerText = "Review Rejected";
-
-            buttonContainer.innerHTML = "";
-            buttonContainer.appendChild(statusMessage);
-
+        function toggleExpand(element) {
+            element.classList.toggle("expanded"); // Adds or removes the 'expanded' class
         }
-
-
-
+     
     </script>
 </body>
 

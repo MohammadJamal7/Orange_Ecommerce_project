@@ -108,6 +108,7 @@ namespace Ecommerce_Project.Controllers
                 };
 
                 _context.Products.Add(product);
+                
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Products", "Dash");
             }

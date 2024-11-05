@@ -1,8 +1,11 @@
 ﻿using Ecommerce_Project.ViewModels;
 using latayef.Data;
 using latayef.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Packaging.Signing;
+using System.Collections.Immutable;
 using System.Runtime.InteropServices;
 
 namespace latayef.Controllers
@@ -11,14 +14,22 @@ namespace latayef.Controllers
     {
 
         private readonly ApplicationContext _context;
-        public PagesController(ApplicationContext context)
+
+        private readonly UserManager<User> _userManager;
+        public PagesController(ApplicationContext context, UserManager<User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
+       
+        
         public async Task<IActionResult> Index()
         {
             IndexPageModel indexPageModel = new IndexPageModel();
-            indexPageModel.testimonials = await _context.Testimonials.ToListAsync();
+            indexPageModel.testimonials =  await _context.Testimonials
+                                                  .Where(t => t.IsApproved ==true)
+                                                  
+                                                  .ToListAsync();
             indexPageModel.products = await _context.Products.ToListAsync();
             indexPageModel.categories = await _context.Categories.ToListAsync();
             return View(indexPageModel);
@@ -70,5 +81,30 @@ namespace latayef.Controllers
             return View(categories);
         }
         public IActionResult wishList() { return View(); }
+
+        
+        public async Task<IActionResult> profile() {
+
+            User user = await _userManager.GetUserAsync(User);
+             
+            if (user ==null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+           
+            ProfileViewModle UserProfile = new ProfileViewModle{ 
+                  Name = user.Name,
+                  Email = user.Email,
+                  PhoneNumber = user.PhoneNumber,
+                  Address = user.Address,
+                  City = user.City,
+                  State = user.State,
+                  Pasword = user.PasswordHash
+                 
+                  
+            };
+			return View(UserProfile);
+        }
     }
 }

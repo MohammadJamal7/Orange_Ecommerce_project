@@ -1,7 +1,11 @@
 ﻿@{
     Layout = null;
 }
+<<<<<<< HEAD
 @model Ecommerce_Project.ViewModels.CategoryModel
+=======
+@model List<Ecommerce_Project.ViewModels.CategoryViewModel>
+>>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
 <!DOCTYPE html>
 <html lang="en">
 
@@ -80,6 +84,106 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
+<<<<<<< HEAD
+=======
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4cae4c;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            transition: border 0.3s;
+        }
+
+            input:focus, textarea:focus, select:focus {
+                border: 1px solid #4cae4c;
+                outline: none;
+            }
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            border: none;
+            background-color: #4cae4c;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+            button:hover {
+                background-color: #45a049;
+                transform: translateY(-2px);
+            }
+
+        .action-button {
+            background-color: #e0e0e0; /* Gray background for the button */
+            color: #333; /* Text color */
+            border: none;
+            padding: 4px 10px;
+            margin: 0 5px; /* Small space between buttons */
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+            /* Hover effect */
+            .action-button:hover {
+                background-color: #d0d0d0;
+            }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .message-column {
+            max-width: 200px;
+        }
+
+        .message-content {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            cursor: pointer;
+        }
+
+            .message-content.expanded {
+                white-space: normal;
+                overflow: visible;
+                max-width: none;
+            }
+>>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
 
         .overlay {
             display: none;
@@ -456,7 +560,11 @@
                                     </thead>
                                     <tbody>
 
+<<<<<<< HEAD
                                         @foreach (var category in Model.categoryViewModels)
+=======
+                                        @foreach (var category in Model)
+>>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
                                         {
                                             <tr>
                                                 <td>
@@ -477,7 +585,11 @@
 
                                                 <td class="align-middle">
                                                     <div class="button-container">
+<<<<<<< HEAD
                                                         <button class="action-button" onclick="editItem(@category.Id)">Edit</button>
+=======
+                                                        <button class="action-button" onclick="editItem()">Edit</button>
+>>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
                                                         <button class="action-button" onclick="removeItem()">Remove</button>
                                                     </div>
                                                 </td>

@@ -5088,12 +5088,20 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\02e65da6-ec8d-4e7d-b174-3e79ba6d15d1_check-circle (3).svg))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\070f6de3-e06d-48e7-afdf-86c116752472_IMG-20241101-WA0032.jpg))">
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\262318c2-eee3-49c7-8246-dd1455cfdc76_pexels-pixabay-271816.jpg))">
+>>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
       <SourceType>Package</SourceType>
       <SourceId>Ecommerce_Project</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Ecommerce_Project</BasePath>
+<<<<<<< HEAD
       <RelativePath>images/products/070f6de3-e06d-48e7-afdf-86c116752472_IMG-20241101-WA0032.jpg</RelativePath>
+=======
+      <RelativePath>images/products/262318c2-eee3-49c7-8246-dd1455cfdc76_pexels-pixabay-271816.jpg</RelativePath>
+>>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -5102,6 +5110,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+<<<<<<< HEAD
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\070f6de3-e06d-48e7-afdf-86c116752472_IMG-20241101-WA0032.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\07ca14ac-3fca-48d3-9cf3-9c6bdc5a073f_GettyImages-1291886933-e1624308433688.png))">
@@ -5199,6 +5208,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\5041c553-b605-492b-bd19-8f120d0aa2ac_night-mode-removebg-preview.webp))</OriginalItemSpec>
+=======
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\262318c2-eee3-49c7-8246-dd1455cfdc76_pexels-pixabay-271816.jpg))</OriginalItemSpec>
+>>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\50953747-8953-44bd-bf9e-38ad98748623_logo-color.png))">
       <SourceType>Package</SourceType>
@@ -5264,12 +5276,20 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\7138e4f9-6734-40df-8a54-fd81125a0c10_wifi.svg))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\98133cd6-b05b-4c7b-98f6-2e9e7242e00a_IMG-20241101-WA0033.jpg))">
+=======
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\a07136d9-2215-447e-bd4f-60ab9e2d86dc_logo-icon-white.png))">
+>>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
       <SourceType>Package</SourceType>
       <SourceId>Ecommerce_Project</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Ecommerce_Project</BasePath>
+<<<<<<< HEAD
       <RelativePath>images/products/98133cd6-b05b-4c7b-98f6-2e9e7242e00a_IMG-20241101-WA0033.jpg</RelativePath>
+=======
+      <RelativePath>images/products/a07136d9-2215-447e-bd4f-60ab9e2d86dc_logo-icon-white.png</RelativePath>
+>>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -5278,6 +5298,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+<<<<<<< HEAD
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\98133cd6-b05b-4c7b-98f6-2e9e7242e00a_IMG-20241101-WA0033.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\a645c8bb-5331-4e7d-9b69-542cc2055cd6_WhatsApp Image 2024-11-02 at 19.53.22_68103724.jpg))">
@@ -5327,6 +5348,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\abf7fdaf-b875-4566-815a-5685cc72eb8d_IMG-20241101-WA0034.jpg))</OriginalItemSpec>
+=======
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\a07136d9-2215-447e-bd4f-60ab9e2d86dc_logo-icon-white.png))</OriginalItemSpec>
+>>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\products\b1546620-50a5-4357-9e4e-b9e658f00035_check-circle (3).svg))">
       <SourceType>Package</SourceType>
