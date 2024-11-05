@@ -25,7 +25,7 @@ namespace Ecommerce_Project.Controllers
         public async Task<IActionResult> Index()
         {
             var products = await _context.Products.Include(p => p.Category).ToListAsync();
-            return View(products);
+            return View(products);  
         }
 
         [HttpGet]
@@ -74,6 +74,7 @@ namespace Ecommerce_Project.Controllers
 
         public async Task<IActionResult> Create(productModel model)
         {
+
             if (true)
             {
                 string uniqueFileName = null;
@@ -108,7 +109,7 @@ namespace Ecommerce_Project.Controllers
 
                 _context.Products.Add(product);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Pages");
+                return RedirectToAction("Products", "Dash");
             }
 
             //ViewData["Categories"] = new SelectList(_context.Categories, "Id", "Name", model.CategoryId);
@@ -116,36 +117,37 @@ namespace Ecommerce_Project.Controllers
         }
 
         // GET: ProductsController/Edit/5
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> GetProduct(int id)
         {
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.Products
+                .Where(p => p.Id == id)
+                .Select(p => new {
+                    p.Id,
+                    p.Name,
+                    p.CategoryId,
+                    p.Size,
+                    p.Price,
+                    p.Description,
+                    ExistingImagePath = p.ImgPath
+                })
+                .FirstOrDefaultAsync();
+
             if (product == null)
             {
                 return NotFound();
             }
 
-            var model = new productModel
-            {
-                Id = product.Id,
-                Name = product.Name,
-                Price = product.Price,
-                Discount = product.Discount,
-                CategoryId = product.CategoryId,
-                ExistingImagePath = product.ImgPath
-            };
-
-            ViewData["Categories"] = new SelectList(_context.Categories, "Id", "Name", product.CategoryId);
-            return View(model);
+            return Json(product);
         }
+
 
         // POST: ProductsController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, productModel model)
+        public async Task<IActionResult> Edit(int id, ProductViewModel model)
         {
-            if (ModelState.IsValid)
-            {
-                var product = await _context.Products.FindAsync(id);
+            ViewData["Categories"] = new SelectList(_context.Categories, "Id", "Name", model.CategoryId);
+            var product = await _context.Products.FindAsync(id);
                 if (product == null)
                 {
                     return NotFound();
@@ -153,8 +155,9 @@ namespace Ecommerce_Project.Controllers
 
                 product.Name = model.Name;
                 product.Price = model.Price;
-                product.Discount = model.Discount;
+                product.Category = model.Category;
                 product.CategoryId = model.CategoryId;
+                product.Description = model.Description;
 
                 if (model.iamgeFile != null)
                 {
@@ -181,11 +184,11 @@ namespace Ecommerce_Project.Controllers
 
                 _context.Update(product);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
+                return RedirectToAction("Products", "Dash");
+            
 
-            ViewData["Categories"] = new SelectList(_context.Categories, "Id", "Name", model.CategoryId);
-            return View(model);
+          
+          
         }
 
         // GET: ProductsController/Delete/5

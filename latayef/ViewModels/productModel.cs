@@ -1,5 +1,6 @@
 ﻿using latayef.Models;
 
+
 namespace Ecommerce_Project.ViewModels
 {
     public class productModel
@@ -17,5 +18,10 @@ namespace Ecommerce_Project.ViewModels
 
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
+
+
+        
+
+
     }
 }

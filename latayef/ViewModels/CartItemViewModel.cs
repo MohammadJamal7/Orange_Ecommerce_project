@@ -8,7 +8,7 @@ namespace Ecommerce_Project.ViewModels
 
         public Product product { get; set; }
 
-        public List<CartItem> Items { get; set; }
+		public List<CartItem> Items { get; set; } = new List<CartItem>();  // Initialized with an empty list
 
-    }
+	}
 }
