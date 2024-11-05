@@ -2,6 +2,7 @@
     Layout = null;
 }
 
+@model Ecommerce_Project.ViewModels.ProductViewModel
 
 
 <!DOCTYPE html>
@@ -312,7 +313,7 @@
                                 <div class="col-lg-12 col-7 d-flex flex-row justify-content-lg-between">
                                     <h6>Products</h6>
                                     <div class="button-container ">
-                                        <button class="action-button text-sm" onclick="openForm()">Add New Product</button>
+                                        <button class="action-button text-sm" onclick="openForm()" >Add New Product</button>
                                     </div>
                                 </div>
                             </div>
@@ -329,137 +330,35 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/small-logos/logo-xd.svg" class="avatar avatar-sm me-3" alt="xd">
+                                       @foreach(var item in Model.Products)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex px-2 py-1">
+                                                        <div>
+                                                            <img src="@item.ImgPath" class="avatar avatar-sm me-3" alt="xd">
+                                                        </div>
+                                                        <div class="d-flex flex-column justify-content-center">
+                                                            <h6 class="mb-0 text-sm">@item.Name</h6>
+                                                        </div>
                                                     </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Product1</h6>
+                                                </td>
+                                                <td>
+                                                    <div class="avatar-group mt-2">
+                                                        <P class="text-xs font-weight-bold">@item.Category.Name</P>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group mt-2">
-                                                    <P class="text-xs font-weight-bold">Category1</P>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="text-xs font-weight-bold"> 1.75 </span>
-                                            </td>
-                                            <td class="align-middle ">
-                                                <div class="button-container d-flex flex-row justify-content-center align-items-center">
-                                                    <button class="action-button" onclick="editItem()">Edit</button>
-                                                    <button class="action-button" onclick="removeItem()">Remove</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/small-logos/logo-atlassian.svg" class="avatar avatar-sm me-3" alt="atlassian">
+                                                </td>
+                                                <td class="align-middle text-center text-sm">
+                                                    <span class="text-xs font-weight-bold"> @item.Price</span>
+                                                </td>
+                                                <td class="align-middle ">
+                                                    <div class="button-container d-flex flex-row justify-content-center align-items-center">
+                                                        <button class="action-button" onclick="editItem(@item.Id)">Edit</button>
+                                                        <button class="action-button" onclick="removeItem()">Remove</button>
                                                     </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Product2</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group mt-2">
-                                                    <P class="text-xs font-weight-bold">Category2</P>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="text-xs font-weight-bold"> 1.5 </span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="button-container d-flex flex-row justify-content-center align-items-center">
-                                                    <button class="action-button" onclick="editItem()">Edit</button>
-                                                    <button class="action-button" onclick="removeItem()">Remove</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/small-logos/logo-slack.svg" class="avatar avatar-sm me-3" alt="team7">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Product3</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group mt-2">
-                                                    <P class="text-xs font-weight-bold">Category3</P>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="text-xs font-weight-bold"> 2.0 </span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="button-container d-flex flex-row justify-content-center align-items-center">
-                                                    <button class="action-button" onclick="editItem()">Edit</button>
-                                                    <button class="action-button" onclick="removeItem()">Remove</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm me-3" alt="spotify">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Product4</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group mt-2">
-                                                    <P class="text-xs font-weight-bold">Category4</P>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="text-xs font-weight-bold"> 3.5 </span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="button-container d-flex flex-row justify-content-center align-items-center">
-                                                    <button class="action-button" onclick="editItem()">Edit</button>
-                                                    <button class="action-button" onclick="removeItem()">Remove</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="../assets/img/small-logos/logo-jira.svg" class="avatar avatar-sm me-3" alt="jira">
-                                                    </div>
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Product5</h6>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group mt-2">
-                                                    <P class="text-xs font-weight-bold">Category5</P>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <span class="text-xs font-weight-bold"> 2.5 </span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="button-container d-flex flex-row justify-content-center align-items-center">
-                                                    <button class="action-button" onclick="editItem()">Edit</button>
-                                                    <button class="action-button" onclick="removeItem()">Remove</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-
+                                                </td>
+                                            </tr>
+                                        }
                                     </tbody>
                                 </table>
                             </div>
@@ -473,40 +372,111 @@
 
             <div class="container" id="productContainer">
                 <h1>Add New Product</h1>
-                <form id="productForm">
-                    <label for="productName">Product Name:</label>
-                    <input type="text" id="productName" required>
+                <form id="productForm" method="post" asp-action="Create" asp-controller="Products" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label">Product Name</label>
+                        <input type="text" asp-for="Name" class="form-control" placeholder="Enter product name" required>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
 
-                    <label for="productCategory">Product Category:</label>
-                    <select id="productCategory" required>
-                        <option value="" disabled selected>Select a category</option>
-                        <option value="juices">Juices</option>
-                        <option value="cocktails">Cocktails</option>
-                        <option value="fruit_salads">Fruit Salads</option>
-                        <option value="ice_cream">Ice Cream</option>
-                    </select>
+                    <div class="mb-3">
+                        <label asp-for="CategoryId" class="form-label">Category</label>
+                        <select asp-for="CategoryId" class="form-select" asp-items="@(ViewData["Categories"] as SelectList)" required>
+                            <option value="">Select a Category</option>
+                        </select>
+                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    </div>
 
-                    <label for="productSize">Product Size:</label>
-                    <select id="productSize" required>
-                        <option value="" disabled selected>Select a size</option>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
+                    <div class="mb-3">
+                        <label asp-for="Size" class="form-label">Product Size</label>
+                        <select asp-for="Size"  class="form-select" required>
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                        <span asp-validation-for="Size" class="text-danger"></span>
+                    </div>
 
-                    <label for="productPrice">Product Price:</label>
-                    <input type="number" id="productPrice" required>
+                    <div class="mb-3">
+                        <label asp-for="Price" class="form-label">Product Price</label>
+                        <input type="number"  asp-for="Price" class="form-control" placeholder="Enter product price" required>
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
 
-                    <label for="productDescription">Product Description:</label>
-                    <textarea id="productDescription" required></textarea>
+                    <div class="mb-3">
+                        <label asp-for="Description" class="form-label">Product Description</label>
+                        <textarea asp-for="Description"  class="form-control" rows="3" placeholder="Enter product description" required></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
 
-                    <label for="productImage">Product Image:</label>
-                    <input type="file" id="productImage" accept="image/*" required>
+                    <div class="mb-3">
+                        <label asp-for="iamgeFile" class="form-label">Product Image</label>
+                        <input type="file" asp-for="iamgeFile" class="form-control" accept="image/*" required>
+                        <span asp-validation-for="iamgeFile" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" >Add Product</button>
+                </form>
+            </div>
+
+
+
+            <div class="overlay" id="overlay2" onclick="closeForm2()"></div>
+
+            <div class="container" id="productContainer2">
+                <h1>Add New Product</h1>
+                <form id="productForm2" method="post" asp-action="Edit" asp-controller="Products" enctype="multipart/form-data">
+                    <input type="hidden" id="productId" name="Id" value="">
+
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label">Product Name</label>
+                        <input type="text" id="productName" asp-for="Name" class="form-control" placeholder="Enter product name" required>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="CategoryId" class="form-label">Category</label>
+                        <select asp-for="CategoryId" id="productCategory" class="form-select" asp-items="@(ViewData["Categories"] as SelectList)" required>
+                            <option value="">Select a Category</option>
+                        </select>
+                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Size" class="form-label">Product Size</label>
+                        <select asp-for="Size" id="productSize" class="form-select" required>
+                            <option value="" disabled selected>Select a size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                        <span asp-validation-for="Size" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Price" class="form-label">Product Price</label>
+                        <input type="number" id="productPrice" asp-for="Price" class="form-control" placeholder="Enter product price" required>
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Description" class="form-label">Product Description</label>
+                        <textarea asp-for="Description" id="productDescription" class="form-control" rows="3" placeholder="Enter product description" required></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="iamgeFile" class="form-label">Product Image</label>
+                        <input type="file" asp-for="iamgeFile" id="productImageInput" class="form-control" accept="image/*" required>
+                        <img id="productImagePreview" src="" alt="Product Image" style="display:none; width:100px; height:100px; margin-top:10px;">
+
+                        <span asp-validation-for="iamgeFile" class="text-danger"></span>
+                    </div>
 
                     <button type="submit">Add Product</button>
                 </form>
             </div>
-
         </div>
     </main>
     <div class="fixed-plugin">
@@ -604,37 +574,48 @@
             document.getElementById('overlay').style.display = 'none';
         }
 
-        document.getElementById('productForm').addEventListener('submit', function(event) {
-            event.preventDefault();
+        function closeForm2() {
+            document.getElementById('productContainer2').style.display = 'none';
+            document.getElementById('overlay2').style.display = 'none';
+        }
 
-            const productName = document.getElementById('productName').value;
-            const productCategory = document.getElementById('productCategory').value;
-            const productSize = document.getElementById('productSize').value;
-            const productPrice = document.getElementById('productPrice').value;
-            const productDescription = document.getElementById('productDescription').value;
-            const productImageInput = document.getElementById('productImage');
 
-            const file = productImageInput.files[0];
-            const reader = new FileReader();
+           
 
-            reader.onload = function(e) {
-                console.log(`
-                    Product Name: ${productName}
-                    Product Category: ${productCategory}
-                    Product Size: ${productSize}
-                    Product Price: ${productPrice} د.أ
-                    Product Description: ${productDescription}
-                    Product Image: ${e.target.result}
-                `);
-            }
-
-            if (file) {
-                reader.readAsDataURL(file);
-            }
-
-            document.getElementById('productForm').reset();
             closeForm(); // Close the modal after form submission
-        });
+
+        async function editItem(productId) {
+            try {
+                const response = await fetch(`/Products/GetProduct/${productId}`);
+                const product = await response.json();
+
+                // Prefill form fields
+                document.getElementById('productId').value = product.id; // Add this line to set the product ID
+
+                document.getElementById('productName').value = product.name;
+                document.getElementById('productCategory').value = product.categoryId;
+                document.getElementById('productSize').value = product.size;
+                document.getElementById('productPrice').value = product.price;
+                document.getElementById('productDescription').value = product.description;
+
+                // Set the image preview if ExistingImagePath exists
+                const imagePreview = document.getElementById('productImagePreview');
+                if (product.ExistingImagePath) {
+                    imagePreview.src = product.ExistingImagePath;
+                    imagePreview.style.display = 'block'; // Show the image preview
+                } else {
+                    imagePreview.style.display = 'none'; // Hide if no image
+                }
+
+                // Display the form modal
+                document.getElementById('productContainer2').style.display = 'block';
+                document.getElementById('overlay2').style.display = 'block';
+            } catch (error) {
+                console.error('Error fetching product:', error);
+            }
+        }
+
+
     </script>
 </body>
 

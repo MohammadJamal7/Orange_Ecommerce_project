@@ -1,0 +1,264 @@
+﻿@{
+    Layout = null;
+}
+
+@model Ecommerce_Project.ViewModels.ProductViewModel
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <title>
+        Soft UI Dashboard 3 by Creative Tim
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.1.0" rel="stylesheet" />
+    <!-- Nepcha Analytics (nepcha.com) -->
+    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+    <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+
+    <style>
+        /* Container for the buttons */
+        .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Style for each button */
+        .action-button {
+            background-color: #e0e0e0; /* Gray background for the button */
+            color: #333; /* Text color */
+            border: none;
+            padding: 4px 10px;
+            margin: 0 5px; /* Small space between buttons */
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+            /* Hover effect */
+            .action-button:hover {
+                background-color: #d0d0d0;
+            }
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 800px;
+            width: 90%;
+            max-height: 80%;
+            overflow-y: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4cae4c;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            transition: border 0.3s;
+        }
+
+            input:focus, textarea:focus, select:focus {
+                border: 1px solid #4cae4c;
+                outline: none;
+            }
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            border: none;
+            background-color: #4cae4c;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+            button:hover {
+                background-color: #45a049;
+                transform: translateY(-2px);
+            }
+
+        .action-button {
+            background-color: #e0e0e0; /* Gray background for the button */
+            color: #333; /* Text color */
+            border: none;
+            padding: 4px 10px;
+            margin: 0 5px; /* Small space between buttons */
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+            /* Hover effect */
+            .action-button:hover {
+                background-color: #d0d0d0;
+            }
+
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="overlay" id="overlay2" onclick="closeForm2()"></div>
+
+<div class="container" id="productContainer2">
+    <h1>Add New Product</h1>
+    <form id="productForm2" method="post" asp-action="Edit" asp-controller="Products" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Product Name</label>
+            <input type="text" id="productName" asp-for="Name" class="form-control" placeholder="Enter product name" required>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CategoryId" class="form-label">Category</label>
+            <select asp-for="CategoryId" id="productCategory" class="form-select" asp-items="@(ViewData["Categories"] as SelectList)" required>
+                <option value="">Select a Category</option>
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Size" class="form-label">Product Size</label>
+            <select asp-for="Size" id="productSize" class="form-select" required>
+                <option value="" disabled selected>Select a size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <span asp-validation-for="Size" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Price" class="form-label">Product Price</label>
+            <input type="number" id="productPrice" asp-for="Price" class="form-control" placeholder="Enter product price" required>
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Product Description</label>
+            <textarea asp-for="Description" id="productDescription" class="form-control" rows="3" placeholder="Enter product description" required></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="iamgeFile" class="form-label">Product Image</label>
+            <input type="file" asp-for="iamgeFile" id="productImageInput" class="form-control" accept="image/*" required>
+            <img id="productImagePreview" src="" alt="Product Image" style="display:none; width:100px; height:100px; margin-top:10px;">
+
+            <span asp-validation-for="iamgeFile" class="text-danger"></span>
+        </div>
+
+        <button type="submit">Add Product</button>
+    </form>
+</div>
+
+
+
+<script>
+    function closeForm2() {
+        document.getElementById('productContainer2').style.display = 'none';
+        document.getElementById('overlay2').style.display = 'none';
+    }
+
+
+
+
+    closeForm(); // Close the modal after form submission
+
+    async function editItem(productId) {
+        try {
+            const response = await fetch(`/Products/GetProduct/${productId}`);
+            const product = await response.json();
+
+            // Prefill form fields
+            document.getElementById('productName').value = product.name;
+            document.getElementById('productCategory').value = product.categoryId;
+            document.getElementById('productSize').value = product.size;
+            document.getElementById('productPrice').value = product.price;
+            document.getElementById('productDescription').value = product.description;
+
+            // Set the image preview if ExistingImagePath exists
+            const imagePreview = document.getElementById('productImagePreview');
+            if (product.ExistingImagePath) {
+                imagePreview.src = product.ExistingImagePath;
+                imagePreview.style.display = 'block'; // Show the image preview
+            } else {
+                imagePreview.style.display = 'none'; // Hide if no image
+            }
+
+            // Display the form modal
+            document.getElementById('productContainer2').style.display = 'block';
+            document.getElementById('overlay2').style.display = 'block';
+        } catch (error) {
+            console.error('Error fetching product:', error);
+        }
+    }
+</script>
+
+</body>

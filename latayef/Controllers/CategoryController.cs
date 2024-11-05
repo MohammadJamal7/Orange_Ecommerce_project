@@ -4,6 +4,8 @@ using latayef.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce_Project.Controllers
 {
@@ -37,10 +39,8 @@ namespace Ecommerce_Project.Controllers
         // POST: CategoryController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(CategoryModel model)
+        public async Task<IActionResult> Create(CategoryViewModel model)
         {
-            if (true)
-            {
                 string uniqueFileName = null;
 
                 // Save the uploaded image to wwwroot/images/categories
@@ -80,46 +80,77 @@ namespace Ecommerce_Project.Controllers
 
                 // Redirect to the Index or any other appropriate action
                 return RedirectToAction("Index", "Pages");
-            }
-
-            // If the model state is invalid, return the view with the current model
-            return View(model);
+            
         }
 
 
-        // GET: CategoryController/Edit/5
-        [HttpGet]
-        public async Task<IActionResult> Edit(int id)
+        // GET: CategoriesController/GetCategory/5
+        public async Task<IActionResult> GetCategory(int id)
         {
+            var category = await _context.Categories
+                .Where(c => c.Id == id)
+                .Select(c => new {
+                    c.Id,
+                    c.Name,
+                    ExistingImagePath = c.ImagePath
+                })
+                .FirstOrDefaultAsync();
+
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            return Json(category);
+        }
+
+
+[HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, CategoryViewModel model)
+        {
+            ViewData["Categories"] = new SelectList(_context.Categories, "Id", "Name");
+
             var category = await _context.Categories.FindAsync(id);
             if (category == null)
             {
                 return NotFound();
             }
 
-            var model = new CategoryModel
-            {
-                Id = category.Id,
-                Name = category.Name,
-                ExistingImagePath = category.ImagePath
-            };
+            // Update the name
+            category.Name = model.Name;
 
-            return View(model);
-        }
+            // Check if a new image is provided
+            if (model.ImageFile != null)
+            {
+                // Delete old image if exists
+                if (!string.IsNullOrEmpty(category.ImagePath))
+                {
+                    var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, category.ImagePath.TrimStart('/'));
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
 
-        // POST: CategoryController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
+                // Save new image
+                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images/categories");
+                string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(model.ImageFile.FileName);
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await model.ImageFile.CopyToAsync(fileStream);
+                }
+
+                category.ImagePath = "/images/categories/" + uniqueFileName;
             }
-            catch
-            {
-                return View();
-            }
+
+            // Update the category in the database
+            _context.Update(category);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Dash"); // Redirect to the categories page
         }
 
         // GET: CategoryController/Delete/5

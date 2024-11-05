@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Ecommerce_Project.csproj": {}
+    "C:\\Orange\\New E-Commerce\\latayef\\Ecommerce_Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Ecommerce_Project.csproj": {
+    "C:\\Orange\\New E-Commerce\\latayef\\Ecommerce_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Ecommerce_Project.csproj",
+        "projectUniqueName": "C:\\Orange\\New E-Commerce\\latayef\\Ecommerce_Project.csproj",
         "projectName": "Ecommerce_Project",
-        "projectPath": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\Ecommerce_Project.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\Desktop\\.Net projs\\latayef\\latayef\\obj\\",
+        "projectPath": "C:\\Orange\\New E-Commerce\\latayef\\Ecommerce_Project.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Orange\\New E-Commerce\\latayef\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
