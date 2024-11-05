@@ -3,6 +3,7 @@ using latayef.Data;
 using latayef.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce_Project.Controllers
@@ -56,57 +57,81 @@ namespace Ecommerce_Project.Controllers
         {
             return View();
         }
-        public IActionResult Testio()
-        {
-            return View();
-        }
-
-
-
-
-
-
-        public async Task<IActionResult> PendingTestimonials()
+        public async Task<IActionResult> Testio()
         {
             var pendingTestimonials = await _context.Testimonials
-                                                   .Where(t => t.IsApproved == null) // Pending testimonials
-                                                   .Include(t => t.User)
-                                                   .ToListAsync();
+                                                  .Where(t => t.IsApproved == null)
+                                                  .Include(t => t.User)
+                                                  .ToListAsync();
             return View(pendingTestimonials);
         }
+
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(string id)
+        {
+           
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user == null)
+            {
+                return Json(new { success = false, message = "User not found." });
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+            if (result.Succeeded)
+            {
+                return Json(new { success = true, userId = id });
+
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+
+            return Json(new { success = false, message = "Error deleting user." });
+
+        }
+
+
+
+        //public async Task<IActionResult> PendingTestimonials()
+        //{
+
+        //    return RedirectToAction("Testio" , pendingTestimonials);
+        //}
 
         // Approve Testimonial
         [HttpPost]
         public async Task<IActionResult> ApproveTestimonial(int id)
         {
             var testimonial = await _context.Testimonials.FindAsync(id);
-            if (testimonial == null)
+            if (testimonial != null)
             {
-                return NotFound();
+                testimonial.IsApproved = true;
+                await _context.SaveChangesAsync();
+                RedirectToAction("Testio", "Dash");
             }
 
-            testimonial.IsApproved = true;
-            _context.Testimonials.Update(testimonial);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction("PendingTestimonials");
+            return RedirectToAction("Testio", "Dash");
         }
+     
 
-        // Reject Testimonial
+        // Reject Testiomonial
         [HttpPost]
         public async Task<IActionResult> RejectTestimonial(int id)
         {
             var testimonial = await _context.Testimonials.FindAsync(id);
-            if (testimonial == null)
+            if (testimonial != null)
             {
-                return NotFound();
+                testimonial.IsApproved = false; // Or set a rejected flag if applicable
+                await _context.SaveChangesAsync();
+                RedirectToAction("Testio", "Dash");
             }
 
-            testimonial.IsApproved = false;
-            _context.Testimonials.Update(testimonial);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction("PendingTestimonials");
+            return RedirectToAction("Testio", "Dash");
         }
 
 

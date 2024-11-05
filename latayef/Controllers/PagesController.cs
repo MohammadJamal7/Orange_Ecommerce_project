@@ -14,23 +14,22 @@ namespace latayef.Controllers
     {
 
         private readonly ApplicationContext _context;
-<<<<<<< HEAD
+
         private readonly UserManager<User> _userManager;
         public PagesController(ApplicationContext context, UserManager<User> userManager)
         {
             _context = context;
             _userManager = userManager;
-=======
-        public PagesController(ApplicationContext context)
-        {
-            _context = context;
->>>>>>> 446c9ae5bd4c662a4c25b240455339df8bacdd92
         }
+       
         
         public async Task<IActionResult> Index()
         {
             IndexPageModel indexPageModel = new IndexPageModel();
-            indexPageModel.testimonials = await _context.Testimonials.ToListAsync();
+            indexPageModel.testimonials =  await _context.Testimonials
+                                                  .Where(t => t.IsApproved ==true)
+                                                  
+                                                  .ToListAsync();
             indexPageModel.products = await _context.Products.ToListAsync();
             indexPageModel.categories = await _context.Categories.ToListAsync();
             return View(indexPageModel);

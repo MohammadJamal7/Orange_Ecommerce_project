@@ -158,6 +158,25 @@
             transform: translateY(0);
         }
 
+        .message-column {
+            max-width: 200px;
+        }
+
+        .message-content {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            cursor: pointer;
+        }
+
+            .message-content.expanded {
+                white-space: normal;
+                overflow: visible;
+                max-width: none;
+            }
+
     </style>
 </head>
 
