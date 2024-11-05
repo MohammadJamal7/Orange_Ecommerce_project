@@ -260,3 +260,15 @@ C:\Users\pc\Desktop\.Net projs\latayef\latayef\obj\Debug\net8.0\refint\Ecommerce
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\obj\Debug\net8.0\Ecommerce_Project.pdb
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\obj\Debug\net8.0\Ecommerce_Project.genruntimeconfig.cache
 C:\Users\pc\Desktop\.Net projs\latayef\latayef\obj\Debug\net8.0\ref\Ecommerce_Project.dll
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.csproj.AssemblyReference.cache
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.AssemblyInfoInputs.cache
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.AssemblyInfo.cs
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.csproj.CoreCompileInputs.cache
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.RazorAssemblyInfo.cache
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.RazorAssemblyInfo.cs
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.sourcelink.json
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.dll
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\refint\Ecommerce_Project.dll
+C:\Orange\New E-Commerce\latayef\obj\Debug\net8.0\Ecommerce_Project.pdb

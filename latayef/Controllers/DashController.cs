@@ -3,18 +3,17 @@ using latayef.Data;
 using latayef.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-<<<<<<< HEAD
+
 using Microsoft.AspNetCore.Mvc.Rendering;
-=======
+
 using Microsoft.CodeAnalysis.CSharp.Syntax;
->>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
 using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce_Project.Controllers
 {
     public class DashController : Controller
     {
-<<<<<<< HEAD
+
 
         private readonly UserManager<User> _userManager;
         private readonly ApplicationContext _context;
@@ -46,35 +45,7 @@ namespace Ecommerce_Project.Controllers
 
             return View(categoryModel);
         }
-=======
-		private readonly UserManager<User> _userManager;
-		private readonly ApplicationContext _context;
->>>>>>> c20f83b450ff987bbca765e3110a2286747b0ab5
 
-
-		public DashController(UserManager<User> userManager, ApplicationContext context)
-		{
-			_userManager = userManager;
-			_context = context;
-
-
-		}
-
-
-		public async Task<IActionResult> Index()
-		{
-			var categoriesWithProductCount = await _context.Categories
-				.Select(c => new CategoryViewModel
-				{
-					Category = c,
-					ProductCount = c.Products.Count(),
-					imagePath = c.ImagePath,
-
-				})
-				.ToListAsync();
-
-			return View(categoriesWithProductCount);
-		}
 
 		public async Task<IActionResult> Admins()
 		{
