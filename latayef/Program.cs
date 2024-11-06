@@ -56,7 +56,7 @@ app.UseAuthorization();  // Enables authorization middleware
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Dash}/{action=Products}/{id?}");
+    pattern: "{controller=Pages}/{action=Index}/{id?}");
 
 // Seed roles and users at startup
 using (var scope = app.Services.CreateScope())

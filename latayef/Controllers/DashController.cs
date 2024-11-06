@@ -34,6 +34,8 @@ namespace Ecommerce_Project.Controllers
                     Category = c,
                     ProductCount = c.Products.Count(),
                     imagePath = c.ImagePath,
+                    Id = c.Id
+
 
                 })
                 .ToListAsync();
@@ -68,6 +70,7 @@ namespace Ecommerce_Project.Controllers
             ViewData["Categories"] = new SelectList(_context.Categories, "Id", "Name");
             return View(productModel);
         }
+
         public IActionResult Profile()
         {
             return View();

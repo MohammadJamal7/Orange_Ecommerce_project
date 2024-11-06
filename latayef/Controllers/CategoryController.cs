@@ -89,11 +89,7 @@ namespace Ecommerce_Project.Controllers
         {
             var category = await _context.Categories
                 .Where(c => c.Id == id)
-                .Select(c => new {
-                    c.Id,
-                    c.Name,
-                    ExistingImagePath = c.ImagePath
-                })
+                .Select(c => new { c.Id, c.Name })
                 .FirstOrDefaultAsync();
 
             if (category == null)
@@ -105,8 +101,9 @@ namespace Ecommerce_Project.Controllers
         }
 
 
-[HttpPost]
-        [ValidateAntiForgeryToken]
+
+        [HttpPost]
+        [ValidateAntiForgeryToken] 
         public async Task<IActionResult> Edit(int id, CategoryViewModel model)
         {
             ViewData["Categories"] = new SelectList(_context.Categories, "Id", "Name");
@@ -154,44 +151,36 @@ namespace Ecommerce_Project.Controllers
         }
 
         // GET: CategoryController/Delete/5
-        [HttpGet]
-        public async Task<IActionResult> Delete(int id)
-        {
-            var category = await _context.Categories.FindAsync(id);
-            if (category == null)
-            {
-                return NotFound();
-            }
-            return View(category);
-        }
+
 
 
         // POST: CategoryController/Delete/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> Delete(int categoryId)
         {
-            var category = await _context.Categories.FindAsync(id);
-            if (category == null)
+            try
             {
-                return NotFound();
-            }
-
-            // Delete the image file if it exists
-            if (!string.IsNullOrEmpty(category.ImagePath))
-            {
-                var filePath = Path.Combine(_webHostEnvironment.WebRootPath, category.ImagePath.TrimStart('/'));
-                if (System.IO.File.Exists(filePath))
+                // Find the category by ID
+                var category = await _context.Categories.FindAsync(categoryId);
+                if (category == null)
                 {
-                    System.IO.File.Delete(filePath);
+                    return NotFound(); // Return 404 if category doesn't exist
                 }
+
+                // Remove the category from the database
+                _context.Categories.Remove(category);
+                await _context.SaveChangesAsync(); // Save changes to the database
+
+                // Return success response
+                return Json(new { success = true });
             }
-
-            _context.Categories.Remove(category);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction("Index", "Pages");
+            catch (Exception ex)
+            {
+                // Log exception and return error response
+                return StatusCode(500, new { success = false, message = "Internal server error: " + ex.Message });
+            }
         }
+
 
     }
 }

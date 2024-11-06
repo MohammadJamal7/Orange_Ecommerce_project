@@ -51,7 +51,7 @@ namespace Ecommerce_Project.Controllers
 
 
         // GET: ProductsController/Details/5
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> singleProduct(int id)
         {
             var product = await _context.Products.Include(p => p.Category).FirstOrDefaultAsync(p => p.Id == id);
             if (product == null)
