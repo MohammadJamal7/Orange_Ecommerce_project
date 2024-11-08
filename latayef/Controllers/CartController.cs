@@ -34,7 +34,7 @@ namespace Ecommerce_Project.Controllers
             {
                 return Unauthorized();
             }
-
+            
             // Retrieve the product by ID
             var product = await _context.Products
                 .Include(p => p.Category) // Include the Category

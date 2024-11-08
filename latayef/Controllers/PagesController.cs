@@ -77,8 +77,15 @@ namespace latayef.Controllers
         public async Task<IActionResult> shop()
         {
             List<Category> categories = await _context.Categories.ToListAsync();
+            List<Product> products = await _context.Products.ToListAsync();
 
-            return View(categories);
+            ProductCategoryViewModel viewModel = new ProductCategoryViewModel
+            {
+                Categories = categories,
+                Products = products
+            };
+
+            return View(viewModel);
         }
         public IActionResult wishList() { return View(); }
 

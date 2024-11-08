@@ -25,11 +25,14 @@
                     <!-- Action buttons -->
                     <div class="bottom-area d-flex px-3 mt-3">
                         <div class="m-auto d-flex">
-                            <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+                            <a href="@Url.Action("singleProduct", "Products", new { id = product.Id })" class="add-to-cart d-flex justify-content-center align-items-center text-center">
                                 <span><i class="ion-ios-menu"></i></span>
                             </a>
-                            <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-                                <span><i class="ion-ios-cart"></i></span>
+                            <!-- Edited Icon-->
+                            <a href="#"
+                               class="buy-now d-flex justify-content-center align-items-center mx-1"
+                               >
+                                <span><i class="ion-ios-cart" data-product-id="@product.Id"></i></span>
                             </a>
                             <a href="#" class="heart d-flex justify-content-center align-items-center">
                                 <span><i class="ion-ios-heart"></i></span>
@@ -41,3 +44,36 @@
         </div>
     }
 </div>
+
+
+
+ <script>
+
+    $(document).ready(function () {
+        $(".buy-now").click(function (e) {
+            e.preventDefault(); // Prevents default link behavior
+            var productId = $(this).data("product-id");
+
+            $.ajax({
+                url: '@Url.Action("AddToCart", "Cart")', // Calls the AddToCart action
+                type: 'POST',
+                data: { productId: productId, quantity: 1 }, // Sends product ID and quantity
+                headers: {
+                    'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() // CSRF token if required
+                },
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message); // Show a success message
+                        // Optionally, update cart icon or display mini cart info
+                    } else {
+                        alert(response.message || "Failed to add item to cart.");
+                    }
+                },
+                error: function (error) {
+                    console.error(error);
+                    alert("Error: Could not add item to cart.");
+                }
+            });
+        });
+    });
+</script>
