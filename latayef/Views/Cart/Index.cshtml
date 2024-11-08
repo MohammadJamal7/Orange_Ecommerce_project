@@ -92,7 +92,7 @@
 						<h3>Cart Totals</h3>
 						<p class="d-flex">
 							<span>Subtotal</span>
-							<span>Model.c</span>
+							<span id="totolItemsPrice">50</span>
 						</p>
 						<p class="d-flex">
 							<span>Delivery</span>
@@ -167,6 +167,9 @@
 					 }
 			  });
 		   });
+			// Update the HTML element with the calculated total
+			document.getElementById("totalItemsPrice").innerText = `Total: $${tot.toFixed(2)}`;
+
 
 			// Function to display a toast notification
 			function showToast(message, type) {

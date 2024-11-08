@@ -100,7 +100,7 @@ namespace latayef.Controllers
                   Address = user.Address,
                   City = user.City,
                   State = user.State,
-                  Pasword = user.PasswordHash
+                  
                  
                   
             };

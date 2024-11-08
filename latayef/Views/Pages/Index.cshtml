@@ -114,13 +114,17 @@
             <div class="row d-flex justify-content-center align-items-center flex-wrap">
                 @foreach (var category in Model.categories)
                 {
-                    <div class="col-md-5 ">
-                        <div class=" rounded category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url('@Url.Content(category.ImagePath)');">
-                            <div class="text rounded px-3 py-1">
-                                <h2 class="mb-0"><a href="#">@category.Name</a></h2>
+                  <a href="#" onclick="GetProducts(@category.Id)">
+
+                        <div class="col-md-5 ">
+                            <div class=" rounded category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url('@Url.Content(category.ImagePath)');">
+                                <div class="text rounded px-3 py-1">
+                                    <h2 class="mb-0"><a href="#">@category.Name</a></h2>
+                                </div>
                             </div>
                         </div>
-                    </div>
+
+                  </a>
                 }
 
             </div>
@@ -276,6 +280,11 @@
                     }
                 });
             });
+
+            function GetProducts(let id){
+                e.preventDefault();
+                var category = #$(this).data();
+            }
     </script>
 
 

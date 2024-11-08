@@ -36,8 +36,8 @@ namespace Ecommerce_Project.Controllers
 			// Validate ModelState
 			if (!ModelState.IsValid)
 			{
-				return View(model);
-			}
+                return RedirectToAction("Login", "Account");
+            }
 
 			// Update the user's personal information
 			user.Name = model.Name;
@@ -56,35 +56,35 @@ namespace Ecommerce_Project.Controllers
 					{
 						ModelState.AddModelError("", error.Description);
 					}
-					return View(model);
-				}
+                    return RedirectToAction("Profile", "Pages");
+                }
 			}
 
 			// Change password if provided
-			if (!string.IsNullOrEmpty(model.Pasword))
-			{
-				var removePasswordResult = await _userManager.RemovePasswordAsync(user);
-				if (removePasswordResult.Succeeded)
-				{
-					var addPasswordResult = await _userManager.AddPasswordAsync(user, model.Pasword);
-					if (!addPasswordResult.Succeeded)
-					{
-						foreach (var error in addPasswordResult.Errors)
-						{
-							ModelState.AddModelError("", error.Description);
-						}
-						return RedirectToAction("Profile", "Pages");
-					}
-				}
-				else
-				{
-					foreach (var error in removePasswordResult.Errors)
-					{
-						ModelState.AddModelError("", error.Description);
-					}
-					return  RedirectToAction("Profile", "Pages");
-				}
-			}
+			//if (!string.IsNullOrEmpty(model.Pasword))
+			//{
+			//	var removePasswordResult = await _userManager.RemovePasswordAsync(user);
+			//	if (removePasswordResult.Succeeded)
+			//	{
+			//		var addPasswordResult = await _userManager.AddPasswordAsync(user, model.Pasword);
+			//		if (!addPasswordResult.Succeeded)
+			//		{
+			//			foreach (var error in addPasswordResult.Errors)
+			//			{
+			//				ModelState.AddModelError("", error.Description);
+			//			}
+			//			return RedirectToAction("Profile", "Pages");
+			//		}
+			//	}
+			//	else
+			//	{
+			//		foreach (var error in removePasswordResult.Errors)
+			//		{
+			//			ModelState.AddModelError("", error.Description);
+			//		}
+			//		return  RedirectToAction("Profile", "Pages");
+			//	}
+			//}
 
 			// Save changes to the user
 			var updateResult = await _userManager.UpdateAsync(user);

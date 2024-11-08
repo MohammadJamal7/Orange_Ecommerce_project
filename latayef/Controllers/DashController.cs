@@ -77,11 +77,17 @@ namespace Ecommerce_Project.Controllers
         }
         public async Task<IActionResult> Testio()
         {
-            var pendingTestimonials = await _context.Testimonials
+            AllTypesTestioViewModel allTypesTestioViewModel = new AllTypesTestioViewModel();
+            allTypesTestioViewModel.pendingTestios = await _context.Testimonials
                                                   .Where(t => t.IsApproved == null)
                                                   .Include(t => t.User)
                                                   .ToListAsync();
-            return View(pendingTestimonials);
+            allTypesTestioViewModel.AcceptedTestios = await _context.Testimonials.Where(t => t.IsApproved == true)
+                .Include(t => t.User).ToListAsync();
+            allTypesTestioViewModel.RejectedTetios = await _context.Testimonials.Where(t => t.IsApproved == false)
+                .Include(t => t.User).ToListAsync();
+
+            return View(allTypesTestioViewModel);
         }
 
 

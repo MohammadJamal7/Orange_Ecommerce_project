@@ -10,7 +10,7 @@
         public bool IsDelivered { get; set; }
 
         // Relationships
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public virtual User User { get; set; }
         public virtual ICollection<OrderItem> Products { get; set; } = new List<OrderItem>();
     }

@@ -17,131 +17,135 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Ecommerce_Project
 build_property.RootNamespace = Ecommerce_Project
-build_property.ProjectDir = C:\Orange\New E-Commerce\latayef\
+build_property.ProjectDir = C:\Users\pc\Desktop\E-comm\latayef\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Orange\New E-Commerce\latayef
+build_property.MSBuildProjectDirectory = C:\Users\pc\Desktop\E-comm\latayef
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Account/Login.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Account/Reggister.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Account/Reggister.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Account/Register.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Cart/Index.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Category/Create.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Dash/Admins.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Dash/Admins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxBZG1pbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Dash/Index.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Dash/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Dash/Orders.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Dash/Orders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxPcmRlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Dash/Products.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Dash/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Dash/Profile.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Dash/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Dash/Testio.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Dash/Testio.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxUZXN0aW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Home/Index.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Home/Privacy.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Pages/about.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Pages/about.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcYWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Pages/checkout.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Pages/checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcY2hlY2tvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Pages/contact.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Pages/contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcY29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Pages/Index.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Pages/productSingle.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Pages/productSingle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNccHJvZHVjdFNpbmdsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Pages/profile.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Pages/profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNccHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Pages/shop.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Pages/shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcc2hvcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Pages/wishList.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Pages/wishList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcd2lzaExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Products/Edit.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Products/singleProduct.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Products/singleProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcc2luZ2xlUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Shared/Error.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Shared/_General.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Shared/_General.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9HZW5lcmFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Shared/_ProductListPartial.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Shared/_ProductListPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdWN0TGlzdFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Shared/_RegisterLayout.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Shared/_RegisterLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZWdpc3RlckxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/_ViewImports.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Orange/New E-Commerce/latayef/Views/_ViewStart.cshtml]
+[C:/Users/pc/Desktop/E-comm/latayef/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

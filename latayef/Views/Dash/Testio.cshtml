@@ -1,7 +1,7 @@
 ﻿@{
     Layout = null;
 }
-@model List<Testimonial>
+@model Ecommerce_Project.ViewModels.AllTypesTestioViewModel
 <!DOCTYPE html>
 <html lang="en">
 
@@ -412,6 +412,7 @@
             </div>
         </nav>
         <!-- End Navbar -->
+        <!-- Pending Testios -->
         <div class="container-fluid py-4">
             <div class="row">
                 <div class="col-12">
@@ -419,14 +420,14 @@
                         <div class="card-header pb-0">
                             <div class="row">
                                 <div class="col-lg-12 col-7 d-flex flex-row justify-content-lg-between">
-                                    <h6>Testios</h6>
+                                    <h6>Pending Testimonials</h6>
                                     
                                 </div>
                             </div>
                         </div>
                         <div class="card-body px-0 pb-2">
                             <div class="table-responsive">
-                                <table class="table align-items-center mb-0">
+                                <table class="table align-items-center mb-0 text-center">
                                     <thead>
                                         <tr>
                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID</th>
@@ -437,7 +438,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach (var testio in Model)
+                                        @foreach (var testio in Model.pendingTestios)
                                         {
                                             <tr id="testimonial-@testio.Id">
                                                 <td>@testio.Id</td>
@@ -477,6 +478,149 @@
                                 </table>
                             </div>
                         </div>
+
+
+                     
+                    </div>
+
+                    <!-- Accepted testios -->
+                    <div class="card">
+                        <div class="card-header pb-0">
+                            <div class="row">
+                                <div class="col-lg-12 col-7 d-flex flex-row justify-content-lg-between ">
+                                    <h6>Accepted Testimonials</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body px-0 pb-2">
+                            <div class="table-responsive">
+                                <table class="table align-items-center mb-0 text-center">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Message</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var testio in Model.AcceptedTestios)
+                                        {
+                                            <tr id="testimonial-@testio.Id">
+                                                <td>@testio.Id</td>
+                                                <td class="message-column">
+                                                    <span class="message-content" data-toggle="tooltip" data-placement="top" title="@testio.Review">
+                                                        @testio.Review
+                                                    </span>
+                                                </td>
+                                                <td>@testio.Name</td>
+                                                <td>@testio.Email</td>
+                                                <td>
+                                                    @if (testio.IsApproved == null)
+                                                    {
+                                                        <form method="post" asp-action="ApproveTestimonial" asp-route-id="@testio.Id">
+                                                            <button type="submit" class="btn btn-outline-success approve-button" data-id="@testio.Id">
+                                                                <i class="fas fa-check"></i> Approve
+                                                            </button>
+                                                        </form>
+                                                        <form method="post" asp-action="RejectTestimonial" asp-route-id="@testio.Id">
+                                                            <button type="submit" class="btn btn-outline-danger reject-button" data-id="@testio.Id">
+                                                                <i class="fas fa-times"></i> Reject
+                                                            </button>
+                                                        </form>
+                                                    }
+                                                    else if (testio.IsApproved == true)
+                                                    {
+                                                        <span class="text-success">Accepted</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-danger">Rejected</span>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                    <!-- Rejected testios -->
+                    <div class="card">
+                        <div class="card-header pb-0">
+                            <div class="row">
+                                <div class="col-lg-12 col-7 d-flex flex-row justify-content-lg-between">
+                                    <h6>Rejected Testimonials</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body px-0 pb-2">
+                            <div class="table-responsive">
+                                <table class="table align-items-center mb-0 text-center">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Message</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
+                                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var testio in Model.RejectedTetios)
+                                        {
+                                            <tr id="testimonial-@testio.Id">
+                                                <td>@testio.Id</td>
+                                                <td class="message-column">
+                                                    <span class="message-content" data-toggle="tooltip" data-placement="top" title="@testio.Review">
+                                                        @testio.Review
+                                                    </span>
+                                                </td>
+                                                <td>@testio.Name</td>
+                                                <td>@testio.Email</td>
+                                                <td>
+                                                    @if (testio.IsApproved == null)
+                                                    {
+                                                        <form method="post" asp-action="ApproveTestimonial" asp-route-id="@testio.Id">
+                                                            <button type="submit" class="btn btn-outline-success approve-button" data-id="@testio.Id">
+                                                                <i class="fas fa-check"></i> Approve
+                                                            </button>
+                                                        </form>
+                                                        <form method="post" asp-action="RejectTestimonial" asp-route-id="@testio.Id">
+                                                            <button type="submit" class="btn btn-outline-danger reject-button" data-id="@testio.Id">
+                                                                <i class="fas fa-times"></i> Reject
+                                                            </button>
+                                                        </form>
+                                                    }
+                                                    else if (testio.IsApproved == true)
+                                                    {
+                                                        <span class="text-success">Accepted</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="text-danger">Rejected</span>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
