@@ -1,7 +1,7 @@
 ﻿@{
     Layout = "~/Views/Shared/_General.cshtml";
 }
-@model List<Category>
+@model Ecommerce_Project.ViewModels.ProductCategoryViewModel
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Products</span></p>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="@Url.Action("Index", "Pages")">Home</a></span> <span>Products</span></p>
                     <h1 class="mb-0 bread">Products</h1>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                 <div class="col-md-10 mb-5 text-center">
                     <ul class="product-category">
                         <li><a href="#" class="category-filter" data-category-id="0">All</a></li>
-                        @foreach (var category in Model)
+                        @foreach (var category in Model.Categories)
                         {
                             <li><a href="#" class="category-filter" data-category-id="@category.Id">@category.Name</a></li>
                         }
@@ -43,7 +43,8 @@
             <div class="row">
                 <!-- Product List Container -->
                 <div id="product-list">
-                    @await Html.PartialAsync("~/Views/Shared/_ProductListPartial.cshtml", Model.SelectMany(c => c.Products))
+                    @await Html.PartialAsync("~/Views/Shared/_ProductListPartial.cshtml", Model.Products)
+
                 </div>
             </div>
             <div class="row mt-5">
@@ -54,7 +55,6 @@
                             <li class="active"><span>1</span></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
-
                             <li><a href="#">&gt;</a></li>
                         </ul>
                     </div>

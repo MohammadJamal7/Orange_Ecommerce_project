@@ -3,6 +3,62 @@
   "WorkspaceRootPath": "C:\\Orange\\New E-Commerce\\latayef\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\shared\\_productlistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\shared\\_productlistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\pages\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\viewmodels\\productcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:viewmodels\\productcategoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\dash\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\dash\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\pages\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\pages\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\shared\\_general.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\shared\\_general.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,18 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\pages\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\orange\\new e-commerce\\latayef\\views\\pages\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,17 +78,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "shop.cshtml",
               "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\shop.cshtml",
               "RelativeDocumentMoniker": "Views\\Pages\\shop.cshtml",
               "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\shop.cshtml",
               "RelativeToolTip": "Views\\Pages\\shop.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC0AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-02T20:28:38.435Z",
               "IsPinned": true,
@@ -52,13 +96,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Pages\\Index.cshtml",
               "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\Index.cshtml",
               "RelativeToolTip": "Views\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAAAAoBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-06T14:54:48.367Z",
               "IsPinned": true,
@@ -66,13 +110,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "contact.cshtml",
               "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\contact.cshtml",
               "RelativeDocumentMoniker": "Views\\Pages\\contact.cshtml",
               "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\contact.cshtml",
               "RelativeToolTip": "Views\\Pages\\contact.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-06T15:00:52.923Z",
               "IsPinned": true,
@@ -84,7 +128,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "_ProductListPartial.cshtml",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Shared\\_ProductListPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ProductListPartial.cshtml",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Shared\\_ProductListPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ProductListPartial.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T19:32:30.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductCategoryViewModel.cs",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\ViewModels\\ProductCategoryViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ProductCategoryViewModel.cs",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\ViewModels\\ProductCategoryViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ProductCategoryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T19:05:49.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagesController.cs",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Controllers\\PagesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PagesController.cs",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Controllers\\PagesController.cs",
+              "RelativeToolTip": "Controllers\\PagesController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwFcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T18:56:29.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T18:33:14.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAAADUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T18:11:14.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAhwCYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T09:58:07.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Dash\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dash\\Index.cshtml",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Dash\\Index.cshtml",
+              "RelativeToolTip": "Views\\Dash\\Index.cshtml",
+              "ViewState": "AgIAAOQBAAAAAAAAAAAWwOUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T09:55:12.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T09:50:40.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "about.cshtml",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\about.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\about.cshtml",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\about.cshtml",
+              "RelativeToolTip": "Views\\Pages\\about.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T09:48:08.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "checkout.cshtml",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\checkout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\checkout.cshtml",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\checkout.cshtml",
+              "RelativeToolTip": "Views\\Pages\\checkout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T09:48:04.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_General.cshtml",
+              "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Shared\\_General.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_General.cshtml",
+              "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Shared\\_General.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_General.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAASwD4AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T09:13:47.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
@@ -92,25 +279,24 @@
               "RelativeToolTip": "Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T15:54:26.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T15:54:26.333Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-06T15:54:21.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 16,
               "Title": "profile.cshtml",
               "DocumentMoniker": "C:\\Orange\\New E-Commerce\\latayef\\Views\\Pages\\profile.cshtml",
               "RelativeDocumentMoniker": "Views\\Pages\\profile.cshtml",
@@ -118,8 +304,7 @@
               "RelativeToolTip": "Views\\Pages\\profile.cshtml",
               "ViewState": "AgIAAC8AAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T15:53:30.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T15:53:30.057Z"
             }
           ]
         },
