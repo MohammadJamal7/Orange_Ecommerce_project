@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\views\\shared\\_general.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\shared\\_general.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|solutionrelative:views\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A443FFB-67CA-4D45-8D23-9AD07E63B8B1}|Ecommerce_Project.csproj|c:\\users\\pc\\desktop\\e-comm\\latayef\\viewmodels\\profileviewmodle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,28 +130,126 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\CartItem.cs",
+              "RelativeToolTip": "Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T20:57:12.054Z",
+              "WhenOpened": "2024-11-08T18:44:34.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "about.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Pages\\about.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\about.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Pages\\about.cshtml",
+              "RelativeToolTip": "Views\\Pages\\about.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T18:39:44.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:19:54.126Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Cart.cs",
+              "RelativeToolTip": "Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T20:13:27.372Z",
+              "WhenOpened": "2024-11-08T18:44:29.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:18:42.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:18:43.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:18:37.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T18:07:12.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Pages\\Index.cshtml*",
+              "RelativeToolTip": "Views\\Pages\\Index.cshtml*",
+              "ViewState": "AgIAABIBAAAAAAAAAAAiwB4BAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T14:54:48.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T18:59:45.747Z",
               "EditorCaption": ""
             },
             {
@@ -169,124 +267,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Orders\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Orders\\Index.cshtml",
-              "RelativeToolTip": "Views\\Orders\\Index.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAIwGoAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T18:59:45.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "Models\\CartItem.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\CartItem.cs",
-              "RelativeToolTip": "Models\\CartItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T18:44:34.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "about.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Pages\\about.cshtml",
-              "RelativeDocumentMoniker": "Views\\Pages\\about.cshtml",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Pages\\about.cshtml",
-              "RelativeToolTip": "Views\\Pages\\about.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T18:39:44.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwBsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T18:19:54.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T20:13:27.372Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "Models\\Cart.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Cart.cs",
-              "RelativeToolTip": "Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T18:44:29.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T18:18:42.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Payment.cs",
-              "RelativeDocumentMoniker": "Models\\Payment.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\Payment.cs",
-              "RelativeToolTip": "Models\\Payment.cs",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T18:18:43.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T20:57:12.054Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\OrderItem.cs",
-              "RelativeDocumentMoniker": "Models\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Models\\OrderItem.cs",
-              "RelativeToolTip": "Models\\OrderItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T18:18:37.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Controllers\\CartController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T18:07:12.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "CartItemViewModel.cs",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\ViewModels\\CartItemViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\CartItemViewModel.cs",
@@ -294,12 +299,11 @@
               "RelativeToolTip": "ViewModels\\CartItemViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T20:33:50.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T20:33:50.754Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "_General.cshtml",
               "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Shared\\_General.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_General.cshtml",
@@ -307,8 +311,7 @@
               "RelativeToolTip": "Views\\Shared\\_General.cshtml",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAEoAAACZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T17:34:38.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T17:34:38.705Z"
             },
             {
               "$type": "Document",
@@ -333,19 +336,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T19:01:29.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Views\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Views\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAAEBAAAAAAAAAAAcwBIBAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T14:54:48.367Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

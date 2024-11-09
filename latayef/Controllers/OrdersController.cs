@@ -20,27 +20,31 @@ namespace Ecommerce_Project.Controllers
 
         public async Task<IActionResult> Index()
         {
-            User CurrentUser = await _userManager.GetUserAsync(User);
+            User currentUser = await _userManager.GetUserAsync(User);
 
             var cart = await _context.Carts
                                      .Include(c => c.Items)
                                      .ThenInclude(i => i.Product)
-                                     .FirstOrDefaultAsync(c => c.UserId == CurrentUser.Id);
+                                     .FirstOrDefaultAsync(c => c.UserId == currentUser.Id);
 
-            if (cart == null )
+            if (cart == null || !cart.Items.Any())
             {
-                return RedirectToAction("EmptyCartError"); // Redirect if the cart is empty or null
+                // Set a message in ViewData to display in the view
+                string catalogUrl = Url.Action("shop", "Pages"); // Adjust action/controller as needed
+                ViewData["CartMessage"] = $"Your cart is empty. <a href='{catalogUrl}'>Browse products</a> to add items to your cart.";
+                // Return the same view without redirecting
+                return View();
             }
 
             // Create a new order with "Pending" status
             Order newOrder = new Order
             {
                 CreatedAt = DateTime.Now,
-                UserId = CurrentUser.Id,
+                UserId = currentUser.Id,
                 Products = new List<OrderItem>(),
-                ShippingAddress = CurrentUser.Address,
+                ShippingAddress = currentUser.Address,
                 TotalPrice = cart.TotalPrice,
-                Status = "Pending", // Set initial status to Pending
+                Status = "Pending",
                 IsDelivered = false
             };
 
@@ -59,7 +63,6 @@ namespace Ecommerce_Project.Controllers
             _context.Orders.Add(newOrder);
             await _context.SaveChangesAsync();
 
-            // Pass the order ID to the view
             ViewData["OrderId"] = newOrder.Id;
             return View(newOrder);
         }

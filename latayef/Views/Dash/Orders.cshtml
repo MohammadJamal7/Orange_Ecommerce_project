@@ -1,7 +1,7 @@
 ﻿@{
     Layout = null;
 }
-
+@model List<Order>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -424,29 +424,21 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td><h6 class="mb-0 text-sm">1</h6></td>
-                                            <td><div class="d-flex px-2 py-1"><div class="d-flex flex-column justify-content-center"><h6 class="mb-0 text-sm">Jane Doe</h6></div></div></td>
-                                            <td class="align-middle text-center text-sm"><span class="text-xs font-weight-bold">$20</span></td>
-                                            <td class="align-middle text-center text-sm"><span class="text-xs font-weight-bold">Shipped</span></td>
-                                            <td class="align-middle">
-                                                <div class="button-container d-flex flex-row justify-content-center align-items-center">
-                                                    <button class="action-button" onclick="openForm()">Show Details</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><h6 class="mb-0 text-sm">2</h6></td>
-                                            <td><div class="d-flex px-2 py-1"><div class="d-flex flex-column justify-content-center"><h6 class="mb-0 text-sm">John Smith</h6></div></div></td>
-                                            <td class="align-middle text-center text-sm"><span class="text-xs font-weight-bold">$15</span></td>
-                                            <td class="align-middle text-center text-sm"><span class="text-xs font-weight-bold">Processing</span></td>
-                                            <td class="align-middle">
-                                                <div class="button-container d-flex flex-row justify-content-center align-items-center">
-                                                    <button class="action-button" onclick="openForm()">Show Details</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- Add more rows as needed for additional orders -->
+                                       
+                                        @foreach(var order in Model)
+                                        {
+                                            <tr>
+                                                <td><h6 class="mb-0 text-sm">1</h6></td>
+                                                <td><div class="d-flex px-2 py-1"><div class="d-flex flex-column justify-content-center"><h6 class="mb-0 text-sm">@order.User.Name</h6></div></div></td>
+                                                <td class="align-middle text-center text-sm"><span class="text-xs font-weight-bold">@order.TotalPrice</span></td>
+                                                <td class="align-middle text-center text-sm"><span class="text-xs font-weight-bold">@order.ShippingAddress</span></td>
+                                                <td class="align-middle">
+                                                    <div class="button-container d-flex flex-row justify-content-center align-items-center">
+                                                        <button class="action-button" onclick="openForm()">Show Details</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
                                     </tbody>
                                 </table>
                             </div>

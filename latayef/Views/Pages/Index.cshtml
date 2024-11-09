@@ -266,10 +266,12 @@
                     url: '@Url.Action("AddToCart", "Cart")', // Calls the AddToCart action
                     type: 'POST',
                     data: { productId: productId, quantity: 1 }, // Sends product ID and quantity
+                    headers: {
+                        'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() // Anti-forgery token
+                    },
                     success: function (response) {
                         if (response.success) {
                             alert(response.message); // Show a success message
-                            // Optionally, update cart icon or display mini cart info
                         } else {
                             alert("Failed to add item to cart.");
                         }
@@ -280,11 +282,9 @@
                     }
                 });
             });
+        });
 
-            function GetProducts(let id){
-                e.preventDefault();
-                var category = #$(this).data();
-            }
+           
     </script>
 
 

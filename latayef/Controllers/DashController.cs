@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace Ecommerce_Project.Controllers
 {
@@ -56,9 +57,11 @@ namespace Ecommerce_Project.Controllers
 		}
 
 		
-        public IActionResult Orders()
+        public async Task<IActionResult> Orders()
         {
-            return View();
+            var orders = _context.Orders.Include(o => o.User).ToListAsync();
+            
+            return View(orders);
         }
         public async Task<IActionResult> Products()
         {

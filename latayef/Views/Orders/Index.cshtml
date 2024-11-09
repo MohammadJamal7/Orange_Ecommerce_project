@@ -3,6 +3,22 @@
 }
 @model Order
 
+@{
+    ViewData["Title"] = "Order Summary";
+}
+
+<h2 class="ms-5" style="margin-left:20px">Order Summary</h2>
+
+@if (ViewData["CartMessage"] != null)
+{
+    <div class="alert alert-warning">
+        @Html.Raw(ViewData["CartMessage"])
+    </div>
+}
+else
+{
+  
+
 <div class="container my-5 p-4 bg-light rounded shadow-lg">
     <h2 class="text-center mb-5 display-5 text-primary">Complete Your Payment</h2>
 
@@ -79,7 +95,7 @@
         </div>
     </div>
 </div>
-
+}
 <!-- Include SweetAlert2 and AJAX Script -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
