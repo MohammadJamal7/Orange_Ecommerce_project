@@ -256,35 +256,33 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
         $(document).ready(function () {
-            $(".buy-now").click(function (e) {
-                e.preventDefault(); // Prevents default link behavior
+            // Automatically load all products when the page opens
+            loadProducts(0); // Pass 0 or null to represent the "All" category
 
-                var productId = $(this).data("product-id");
+        function loadProducts(categoryId) {
+            $.ajax({
+                url: '@Url.Action("FilterByCategory", "Products")',
+                type: 'GET',
+                data: { categoryId: categoryId },
+                success: function (response) {
+                    $('#products-section').html(response); // Load the products into the section
+                },
+                error: function (error) {
+                    console.error("Error loading products:", error);
+                }
+            });
+            }
 
-                $.ajax({
-                    url: '@Url.Action("AddToCart", "Cart")', // Calls the AddToCart action
-                    type: 'POST',
-                    data: { productId: productId, quantity: 1 }, // Sends product ID and quantity
-                    headers: {
-                        'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() // Anti-forgery token
-                    },
-                    success: function (response) {
-                        if (response.success) {
-                            alert(response.message); // Show a success message
-                        } else {
-                            alert("Failed to add item to cart.");
-                        }
-                    },
-                    error: function (error) {
-                        console.error(error);
-                        alert("Error: Could not add item to cart.");
-                    }
-                });
+        // Optional: bind click events to categories to load products by category dynamically
+        $('a.category-link').click(function (e) {
+            e.preventDefault();
+        var categoryId = $(this).data('category-id');
+        loadProducts(categoryId);
             });
         });
-
-           
     </script>
 
 

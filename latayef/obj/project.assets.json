@@ -7966,11 +7966,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Ecommerce_Project.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\Desktop\\.Net projs\\E-comm\\latayef\\Ecommerce_Project.csproj",
       "projectName": "Ecommerce_Project",
-      "projectPath": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\Ecommerce_Project.csproj",
+      "projectPath": "C:\\Users\\pc\\Desktop\\.Net projs\\E-comm\\latayef\\Ecommerce_Project.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\Desktop\\E-comm\\latayef\\obj\\",
+      "outputPath": "C:\\Users\\pc\\Desktop\\.Net projs\\E-comm\\latayef\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",

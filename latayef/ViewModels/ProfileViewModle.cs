@@ -18,6 +18,7 @@ namespace Ecommerce_Project.ViewModels
 		public string Email { get; set; }
 		//public Wishlist Wishlist { get; set; }
 		public string PhoneNumber { get; set; }
+		public ICollection<Order> orders { get; set; }
 		
 
 	}

@@ -47,10 +47,7 @@ namespace latayef.Controllers
         }
 
 
-        public IActionResult blogSingle()
-        {
-            return View();
-        }
+      
 
         public IActionResult cart()
         {
@@ -77,15 +74,23 @@ namespace latayef.Controllers
         public async Task<IActionResult> shop()
         {
             List<Category> categories = await _context.Categories.ToListAsync();
+            List<Product> products = await _context.Products.ToListAsync();
 
-            return View(categories);
+            ProductCategoryViewModel viewModel = new ProductCategoryViewModel
+            {
+                Categories = categories,
+                Products = products
+            };
+
+            return View(viewModel);
         }
+
         public IActionResult wishList() { return View(); }
 
         
         public async Task<IActionResult> profile() {
 
-            User user = await _userManager.GetUserAsync(User);
+            User user = await _userManager.Users.Include(usr => usr.Orders).FirstOrDefaultAsync(usr => usr.Id == _userManager.GetUserId(User));
              
             if (user ==null)
             {
@@ -100,7 +105,7 @@ namespace latayef.Controllers
                   Address = user.Address,
                   City = user.City,
                   State = user.State,
-                  
+                  orders = user.Orders
                  
                   
             };

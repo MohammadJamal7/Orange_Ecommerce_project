@@ -50,6 +50,7 @@ namespace Ecommerce_Project.Controllers
         }
 
 
+
         // GET: ProductsController/Details/5
         public async Task<IActionResult> singleProduct(int id)
         {
