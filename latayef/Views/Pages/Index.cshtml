@@ -3,15 +3,17 @@
    
 }
 @model Ecommerce_Project.ViewModels.IndexPageModel;
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <title>Vegefoods - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
         .ftco-category .category-wrap {
-         
             height: 300px;
         }
     </style>
@@ -260,7 +262,7 @@
                     <div class="carousel-testimony owl-carousel">
                         @foreach(var item in Model.testimonials)
                         {
-
+                            
                             <div class="item">
                                 <div class="testimony-wrap p-4 pb-5">
                                     <div class="user-img mb-5" style="background-image: url(~/images/person_1.jpg)">

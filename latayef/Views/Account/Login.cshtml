@@ -1,0 +1,71 @@
+﻿@{
+    Layout = null;
+}
+@model Ecommerce_Project.ViewModels.LoginModelView
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href="~/css/Registerstylet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .error-message {
+            color: red;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main mt-5" style="margin-top:50px">
+        <section class="sign-in">
+            <div class="container mt-5">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="~/images/logo.jpg" alt="sign in image"></figure>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Login</h2>
+                        <form asp-action="Login" method="post" id="login-form">
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "error-message" })
+
+                            <!-- Email Field Bound to Model -->
+                            <div class="form-group">
+                                <label for="Email"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input asp-for="Email" class="form-control" placeholder="Your Email" />
+                                <span class="error-message" asp-validation-for="Email"></span>
+                            </div>
+
+                            <!-- Password Field Bound to Model -->
+                            <div class="form-group">
+                                <label for="Password"><i class="zmdi zmdi-lock"></i></label>
+                                <input asp-for="Password" type="password" class="form-control" placeholder="Password" />
+                                <span class="error-message" asp-validation-for="Password"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <a href="@Url.Action("Register", "Account")" class="signup-image-link">Create an account?</a>
+                            </div>
+
+                            <div class="form-group form-button">
+                                <input type="submit" id="signin" class="form-submit" value="Log in" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- jQuery and Validation Scripts -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

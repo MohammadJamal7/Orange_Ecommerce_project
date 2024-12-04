@@ -13,7 +13,7 @@ list-type-ulli, .socials {
 
 /* poppins-300 - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: normal;
     font-weight: 300;
     src: url("../fonts/poppins/poppins-v5-latin-300.eot");
@@ -23,7 +23,7 @@ list-type-ulli, .socials {
 }
 /* poppins-300italic - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: italic;
     font-weight: 300;
     src: url("../fonts/poppins/poppins-v5-latin-300italic.eot");
@@ -33,7 +33,7 @@ list-type-ulli, .socials {
 }
 /* poppins-regular - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/poppins/poppins-v5-latin-regular.eot");
@@ -43,7 +43,7 @@ list-type-ulli, .socials {
 }
 /* poppins-italic - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: italic;
     font-weight: 400;
     src: url("../fonts/poppins/poppins-v5-latin-italic.eot");
@@ -53,7 +53,7 @@ list-type-ulli, .socials {
 }
 /* poppins-500 - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: normal;
     font-weight: 500;
     src: url("../fonts/poppins/poppins-v5-latin-500.eot");
@@ -63,7 +63,7 @@ list-type-ulli, .socials {
 }
 /* poppins-500italic - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: italic;
     font-weight: 500;
     src: url("../fonts/poppins/poppins-v5-latin-500italic.eot");
@@ -73,7 +73,7 @@ list-type-ulli, .socials {
 }
 /* poppins-600 - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: normal;
     font-weight: 600;
     src: url("../fonts/poppins/poppins-v5-latin-600.eot");
@@ -83,7 +83,7 @@ list-type-ulli, .socials {
 }
 /* poppins-700 - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/poppins/poppins-v5-latin-700.eot");
@@ -93,7 +93,7 @@ list-type-ulli, .socials {
 }
 /* poppins-700italic - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: italic;
     font-weight: 700;
     src: url("../fonts/poppins/poppins-v5-latin-700italic.eot");
@@ -103,7 +103,7 @@ list-type-ulli, .socials {
 }
 /* poppins-800 - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: normal;
     font-weight: 800;
     src: url("../fonts/poppins/poppins-v5-latin-800.eot");
@@ -113,7 +113,7 @@ list-type-ulli, .socials {
 }
 /* poppins-800italic - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: italic;
     font-weight: 800;
     src: url("../fonts/poppins/poppins-v5-latin-800italic.eot");
@@ -123,7 +123,7 @@ list-type-ulli, .socials {
 }
 /* poppins-900 - latin */
 @font-face {
-    font-family: 'Poppins';
+    font-family: Times New Roman', Times, serif';
     font-style: normal;
     font-weight: 900;
     src: url("../fonts/poppins/poppins-v5-latin-900.eot");
@@ -205,14 +205,14 @@ h2 {
     margin: 0;
     padding: 0;
     font-weight: bold;
-    color: #222;
-    font-family: Poppins;
+    color: #80c06b;
+    font-family: Times New Roman', Times, serif';
     font-size: 36px;
 }
 
 .main {
     background: #f8f8f8;
-    padding: 150px 0;
+    padding: 15px 0;
 }
 
 .clear {
@@ -225,7 +225,7 @@ body {
     color: #222;
     background: #f8f8f8;
     font-weight: 400;
-    font-family: Poppins;
+    font-family: Times New Roman', Times, serif'
 }
 
 .container {
@@ -295,6 +295,13 @@ body {
 }
 
 .signup-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.signup-image {
     margin: 0 55px;
 }
 
@@ -312,23 +319,25 @@ figure {
 }
 
 .form-submit {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
     display: inline-block;
-    background: #6dabe4;
+    background: #57c41d;
     color: #fff;
     border-bottom: none;
-    width: auto;
+    width: 100%;
     padding: 15px 39px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -o-border-radius: 5px;
     -ms-border-radius: 5px;
-    margin-top: 25px;
+    margin-top: 5px;
     cursor: pointer;
 }
 
     .form-submit:hover {
-        background: #4292dc;
+        background: #4ca91a;
     }
 
 #signin {
@@ -336,10 +345,10 @@ figure {
 }
 
 .signup-image-link {
-    font-size: 14px;
-    color: #222;
+    text-decoration: none;
+    font-size: 15px;
+    color: #62a839;
     display: block;
-    text-align: center;
 }
 
 .term-service {
@@ -373,7 +382,7 @@ input {
     border: none;
     border-bottom: 1px solid #999;
     padding: 6px 30px;
-    font-family: Poppins;
+    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
 
@@ -463,7 +472,7 @@ input {
                 font-size: 11px;
                 line-height: 1.2;
                 text-align: center;
-                font-family: 'Material-Design-Iconic-Font';
+                font-family: Times New Roman', Times, serif';
                 font-weight: bold;
             }
 
@@ -509,7 +518,7 @@ label.valid {
 }
 
     label.valid:after {
-        font-family: 'Material-Design-Iconic-Font';
+        font-family: 'Times New Roman', Times, serif;
         content: '\f269';
         width: 100%;
         height: 100%;
@@ -518,6 +527,7 @@ label.valid {
         font-size: 16px;
         color: green;
     }
+
 
 .label-agree-term {
     position: relative;
@@ -540,11 +550,13 @@ label.valid {
 
 .social-login {
     align-items: center;
+    display: flex;
+    justify-content: center;
     -moz-align-items: center;
     -webkit-align-items: center;
     -o-align-items: center;
     -ms-align-items: center;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .social-label {
@@ -613,6 +625,9 @@ label.valid {
     margin-left: 110px;
     margin-right: 20px;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {

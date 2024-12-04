@@ -92,7 +92,7 @@
             <div class="row">
                 <!-- Product List Container -->
                 <div id="product-list">
-                    @await Html.PartialAsync("_ProductListPartial", Model.SelectMany(c => c.Products))
+                    @await Html.PartialAsync("~/Views/Shared/_ProductListPartial.cshtml", Model.SelectMany(c => c.Products))
                 </div>
             </div>
             <div class="row mt-5">
@@ -103,8 +103,7 @@
                             <li class="active"><span>1</span></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
+                            
                             <li><a href="#">&gt;</a></li>
                         </ul>
                     </div>
@@ -213,25 +212,40 @@
 
 
     <script>
-               document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function () {
             const categoryLinks = document.querySelectorAll('.category-filter');
+
             categoryLinks.forEach(link => {
                 link.addEventListener('click', function (e) {
                     e.preventDefault();
                     const categoryId = this.getAttribute('data-category-id');
+                    console.log("Category ID clicked:", categoryId); // Log the category ID
                     fetchProducts(categoryId);
                 });
             });
 
             function fetchProducts(categoryId) {
+                console.log("Fetching products for category ID:", categoryId); // Log before making the request
                 fetch(`/Products/FilterByCategory?categoryId=${categoryId}`)
-                    .then(response => response.text())
+                    .then(response => {
+                        if (!response.ok) {
+                            console.error(`HTTP error! Status: ${response.status}`);
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.text();
+                    })
                     .then(html => {
+                        console.log("HTML received:", html); // Log received HTML content
                         document.getElementById('product-list').innerHTML = html;
                     })
-                    .catch(error => console.error('Error loading products:', error));
+                    .catch(error => {
+                        console.error('Error loading products:', error);
+                        document.getElementById('product-list').innerHTML = '<p>Error loading products. Please try again later.</p>';
+                    });
             }
         });
+
+
 
     </script>
 </body>

@@ -29,14 +29,26 @@ namespace Ecommerce_Project.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> FilterByCategory(int categoryId)
+        public IActionResult FilterByCategory(int categoryId)
         {
-            var products = categoryId == 0
-                ? await _context.Products.Include(p => p.Category).ToListAsync()
-                : await _context.Products.Where(p => p.CategoryId == categoryId).Include(p => p.Category).ToListAsync();
+            Console.WriteLine("FilterByCategory called with categoryId:", categoryId); // Debugging
 
-            return PartialView("~/Views/Products/_ProductListPartial.cshtml", products);
+            var products = categoryId == 0
+                ? _context.Products.ToList()
+                : _context.Products.Where(p => p.CategoryId == categoryId).ToList();
+
+            if (!products.Any())
+            {
+                Console.WriteLine("No products found for category ID: " + categoryId);
+            }
+            else
+            {
+                Console.WriteLine($"Found {products.Count} products for category ID: {categoryId}");
+            }
+
+            return PartialView("~/Views/Shared/_ProductListPartial.cshtml", products);
         }
+
 
         // GET: ProductsController/Details/5
         public async Task<IActionResult> Details(int id)
@@ -83,7 +95,7 @@ namespace Ecommerce_Project.Controllers
                     }
                 }
 
-                var product = new Product
+                Product product = new Product
                 {
                     Name = model.Name,
                     Price = model.Price,
@@ -99,8 +111,8 @@ namespace Ecommerce_Project.Controllers
                 return RedirectToAction("Index", "Pages");
             }
 
-            ViewData["Categories"] = new SelectList(_context.Categories, "Id", "Name", model.CategoryId);
-            return View(model);
+            //ViewData["Categories"] = new SelectList(_context.Categories, "Id", "Name", model.CategoryId);
+            //return View(model);
         }
 
         // GET: ProductsController/Edit/5

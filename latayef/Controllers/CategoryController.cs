@@ -66,11 +66,13 @@ namespace Ecommerce_Project.Controllers
                 }
 
                 // Create a new Category and save the file path to ImagePath
-                var category = new Category
+                Category category = new Category
                 {
                     Name = model.Name,
                     ImagePath = uniqueFileName != null ? "/images/categories/" + uniqueFileName : "/images/default.jpg" // Set default image if no file uploaded
                 };
+
+               
 
                 // Add to context and save
                 _context.Categories.Add(category);

@@ -3,75 +3,95 @@
 }
 @model RegisterViewModel
 
-<div class="container mt-5">
-    <h2 class="text-center mb-4">Register</h2>
-    <form asp-action="Register" method="post" class="needs-validation" novalidate>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Form</title>
+    <link href="~/css/Registerstylet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-design-iconic-font@2.2.0/dist/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <section class="signup mb-0">
+        <div class="container">
+            <div class="signup-content p-0">
+                <div class="signup-form">
+                    <h2 class="form-title">Sign up</h2>
+                    <form asp-action="Register" method="post" id="register-form">
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true, "", new { @class = "error-message" })
 
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label asp-for="Email" class="form-label"></label>
-                <input asp-for="Email" class="form-control" placeholder="Enter your email" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="col-md-6">
-                <label asp-for="Name" class="form-label"></label>
-                <input asp-for="Name" class="form-control" placeholder="Enter your name" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input asp-for="Name" type="text" id="name" placeholder="Your Name" />
+                            <span class="error-message" asp-validation-for="Name"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input asp-for="Email" type="email" id="email" placeholder="Your Email"  />
+                            <span class="error-message" asp-validation-for="Email"></span>
+                        </div>
+                         
+                        <div class="form-group">
+                            <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                            <input asp-for="Password" type="password" id="pass" placeholder="Password" />
+                            <span class="error-message" asp-validation-for="Password"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="re_pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                            <input asp-for="ConfirmPassword" type="password" id="re_pass" placeholder="Repeat your password" />
+                            <span class="error-message" asp-validation-for="ConfirmPassword"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone"><i class="fa-solid fa-phone"></i></label>
+                            <input asp-for="Phone" type="text" id="phone" placeholder="Phone Number" />
+                            <span class="error-message" asp-validation-for="Phone"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city"><i class="fa-solid fa-city"></i></label>
+                            <input asp-for="City" type="text" id="city" placeholder="City" />
+                            <span class="error-message" asp-validation-for="City"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state"><i class="fa-solid fa-location-dot"></i></label>
+                            <input asp-for="State" type="text" id="state" placeholder="State" />
+                            <span class="error-message" asp-validation-for="State"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address"><i class="fa-solid fa-map-location-dot"></i></label>
+                            <input asp-for="Adress" type="text" id="address" placeholder="Address" />
+                            <span class="error-message" asp-validation-for="Adress"></span>
+                        </div>
+
+                        <div class="form-group form-button mt-0 p-0">
+                            <input type="submit" id="signup" class="form-submit" value="Register"  />
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-image">
+                    <figure>
+                        <img src="~/images/logo.jpg" asp-append-version="true" alt="sign up image">
+                    </figure>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label asp-for="Phone" class="form-label"></label>
-                <input asp-for="Phone" class="form-control" placeholder="Enter your phone number" />
-                <span asp-validation-for="Phone" class="text-danger"></span>
-            </div>
-            <div class="col-md-6">
-                <label asp-for="State" class="form-label"></label>
-                <input asp-for="State" class="form-control" placeholder="Enter your state" />
-                <span asp-validation-for="State" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label asp-for="City" class="form-label"></label>
-                <input asp-for="City" class="form-control" placeholder="Enter your city" />
-                <span asp-validation-for="City" class="text-danger"></span>
-            </div>
-            <div class="col-md-6">
-                <label asp-for="Adress" class="form-label"></label>
-                <input asp-for="Adress" class="form-control" placeholder="Enter your address" />
-                <span asp-validation-for="Adress" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label asp-for="Password" class="form-label"></label>
-                <input asp-for="Password" type="password" class="form-control" placeholder="Enter your password" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="col-md-6">
-                <label asp-for="ConfirmPassword" class="form-label"></label>
-                <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Confirm your password" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label asp-for="Role" class="form-label">Register as:</label>
-            <select asp-for="Role" class="form-select">
-                <option value="Customer">Customer</option>
-                <option value="Admin">Admin</option>
-            </select>
-            <span asp-validation-for="Role" class="text-danger"></span>
-        </div>
-
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary">Register</button>
-        </div>
-    </form>
-</div>
-
-
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
