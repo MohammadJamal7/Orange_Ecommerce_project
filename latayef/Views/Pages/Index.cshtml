@@ -1,0 +1,290 @@
+﻿@{
+    Layout = "~/Views/Shared/_General.cshtml";
+
+}
+@model Ecommerce_Project.ViewModels.IndexPageModel;
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Vegefoods - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .ftco-category .category-wrap {
+            height: 300px;
+        }
+    </style>
+
+</head>
+<body class="goto-here">
+   
+   
+    <!-- div and nav in general -->
+
+    <section id="home-section" class="hero">
+        <div class="home-slider owl-carousel">
+            <div class="slider-item" style="background-image: url('@Url.Content("~/images/IMG-20241105-WA0048.jpg")'); object-fit:cover; height:550px" >
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+                        <div class="col-md-12 ftco-animate text-center" style="margin-bottom: 180px">
+                            <h1 >We serve Fresh Cocktial &amp; Fruit Juice</h1>
+                            <h2 class="subheading mb-4">We deliver organic Juice &amp; Cocktail</h2>
+                            <p><a href="@Url.Action("shop", "Pages")" class="btn btn-primary">Shop Now</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-item" style="background-image: url('@Url.Content("~/images/IMG-20241105-WA0046.jpg")'); object-fit:cover; height:550px">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+                        <div class="col-sm-12 ftco-animate text-center" style="margin-bottom: 170px">
+                            <h1>100% Fresh &amp; Organic Fruits</h1>
+                            <h2 class="subheading mb-4">We deliver organic Juice &amp; Cocktail</h2>
+                            <p><a href="@Url.Action("shop", "Pages")"  class="btn btn-primary">Shop Now</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row no-gutters ftco-services">
+                <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services mb-md-0 mb-4">
+                        <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
+                            <span class="flaticon-shipped"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Free Shipping</h3>
+                            <span>On order over $100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services mb-md-0 mb-4">
+                        <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
+                            <span class="flaticon-diet"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Always Fresh</h3>
+                            <span>Product well package</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services mb-md-0 mb-4">
+                        <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
+                            <span class="flaticon-award"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Superior Quality</h3>
+                            <span>Quality Products</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services mb-md-0 mb-4">
+                        <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
+                            <span class="flaticon-customer-service"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Support</h3>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-category ftco-no-pt">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center flex-wrap">
+                @foreach (var category in Model.categories)
+                {
+                  <a href="#" onclick="GetProducts(@category.Id)">
+
+                        <div class="col-md-5 ">
+                            <div class=" rounded category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url('@Url.Content(category.ImagePath)');">
+                                <div class="text rounded px-3 py-1">
+                                    <h2 class="mb-0"><a href="#">@category.Name</a></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                  </a>
+                }
+
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-3 pb-3">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <span class="subheading">Featured Products</span>
+                    <h2 class="mb-4">Our Products</h2>
+                    <p>Explore our refreshing range of handcrafted cocktails, fruit juices, and salads, made with the freshest ingredients to bring you a burst of flavor and vitality in every sip and bite!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model.products)
+                {
+                    <div class="col-md-6 col-lg-3 ftco-animate">
+                        <div class="product">
+                            <a href="#" class="img-prod">
+                                <img class="img-fluid" src="@item.ImgPath" alt="Colorlib Template">
+                                <div class="overlay"></div>
+                            </a>
+                            <div class="text py-3 pb-4 px-3 text-center">
+                                <h3><a href="#">@item.Name</a></h3>
+                                <div class="d-flex">
+                                    <div class="pricing">
+                                        <p class="price"><span>@item.Price</span></p>
+                                    </div>
+                                </div>
+                                <div class="bottom-area d-flex px-3">
+                                    <div class="m-auto d-flex">
+                                        <a href="@Url.Action("singleProduct", "Products", new { id = item.Id })" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+                                            <span><i class="ion-ios-menu"></i></span>
+                                        </a>
+                                        <!-- Edited Icon-->
+                                        <a href="#"
+                                           class="buy-now d-flex justify-content-center align-items-center mx-1"
+                                           data-product-id="@item.Id">
+                                            <span><i class="ion-ios-cart"></i></span>
+                                        </a>
+
+                                        <a href="#" class="heart d-flex justify-content-center align-items-center ">
+                                            <span><i class="ion-ios-heart"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="ftco-section testimony-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <span class="subheading">Testimony</span>
+                    <h2 class="mb-4">Our satisfied customer says</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel">
+                        @foreach (var item in Model.testimonials)
+                        {
+
+                            <div class="item">
+                                <div class="testimony-wrap p-4 pb-5">
+                                    <div class="user-img mb-5" style="background-image: url(~/images/person_1.jpg)">
+                                        <span class="quote d-flex align-items-center justify-content-center">
+                                            <i class="icon-quote-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="text text-center">
+                                        <p class="mb-5 pl-4 line">@item.Review</p>
+                                        <p class="name">@item.Name</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
+        <div class="container py-4">
+            <div class="row d-flex justify-content-center py-5">
+                <div class="col-md-6">
+                    <h2 style="font-size: 22px;" class="mb-0">Enter your testiomonial</h2>
+                    <span>Get e-mail updates about our latest shops and special offers</span>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <form class="subscribe-form" asp-controller="Reviewing" asp-action="Tesionmonial">
+                        <div class="form-group d-flex">
+                            <input type="text" class="form-control" asp-for="testimonial.Name" placeholder="Enter your name">
+                            <input type="email" class="form-control" asp-for="testimonial.Email" required placeholder="Enter email address">
+                            <input type="submit" value="Subscribe" class="submit px-3">
+                        </div>
+                        <div class="d-flex form-group">
+                            <textarea class="form-control" rows="3" asp-for="testimonial.Review" placeholder="Enter your message"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Automatically load all products when the page opens
+            loadProducts(0); // Pass 0 or null to represent the "All" category
+
+        function loadProducts(categoryId) {
+            $.ajax({
+                url: '@Url.Action("FilterByCategory", "Products")',
+                type: 'GET',
+                data: { categoryId: categoryId },
+                success: function (response) {
+                    $('#products-section').html(response); // Load the products into the section
+                },
+                error: function (error) {
+                    console.error("Error loading products:", error);
+                }
+            });
+            }
+
+        // Optional: bind click events to categories to load products by category dynamically
+        $('a.category-link').click(function (e) {
+            e.preventDefault();
+        var categoryId = $(this).data('category-id');
+        loadProducts(categoryId);
+            });
+        });
+    </script>
+
+
+</body>
+</html>

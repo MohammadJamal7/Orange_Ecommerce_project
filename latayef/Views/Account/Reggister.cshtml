@@ -1,0 +1,186 @@
+﻿@model RegisterViewModel
+@{
+    Layout = "~/Views/Shared/_RegisterLayout.cshtml";
+}
+
+
+<link rel="stylesheet" href="~/css/.css" asp-append-version="true">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" />
+
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email" />
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password" />
+                                <span class="error-message" id="pass-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="re_pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
+                                <span class="error-message" id="re-pass-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="fa-solid fa-phone"></i></label>
+                                <input type="text" name="phone" id="phone" placeholder="Phone Number" />
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address"><i class="fa-solid fa-map-location-dot"></i></label>
+                                <input type="text" name="address" id="address" placeholder="Address" />
+                                <span class="error-message" id="address-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <a href="index.html" class="signup-image-link" id="show-signin">I am already a member</a>
+
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images/pexels-janetrangdoan-1132047.jpg" alt="sing up image"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script>
+        document.getElementById('register-form').addEventListener('submit', function(event) {
+            let valid = true;
+            clearErrorMessages();
+
+            const name = document.getElementById('name').value;
+            if (!name) {
+                showError('name-error', 'Name is required');
+                valid = false;
+            }
+
+            const email = document.getElementById('email').value;
+            if (!email) {
+                showError('email-error', 'Email is required');
+                valid = false;
+            }
+
+            const pass = document.getElementById('pass').value;
+            if (!pass) {
+                showError('pass-error', 'Password is required');
+                valid = false;
+            }
+
+            const re_pass = document.getElementById('re_pass').value;
+            if (!re_pass) {
+                showError('re-pass-error', 'Please repeat your password');
+                valid = false;
+            } else if (pass !== re_pass) {
+                showError('re-pass-error', 'Passwords do not match');
+                valid = false;
+            }
+
+            const phone = document.getElementById('phone').value;
+            if (!phone) {
+                showError('phone-error', 'Phone number is required');
+                valid = false;
+            }
+
+            const city = document.getElementById('city').value;
+            if (!city) {
+                showError('city-error', 'City is required');
+                valid = false;
+            }
+
+            const state = document.getElementById('state').value;
+            if (!state) {
+                showError('state-error', 'State is required');
+                valid = false;
+            }
+
+            const address = document.getElementById('address').value;
+            if (!address) {
+                showError('address-error', 'Address is required');
+                valid = false;
+            }
+
+            if (!valid) {
+                event.preventDefault();
+            }
+        });
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            let valid = true;
+            clearErrorMessages();
+
+            const your_name = document.getElementById('your_name').value;
+            if (!your_name) {
+                showError('login-name-error', 'Name is required');
+                valid = false;
+            }
+
+            const your_pass = document.getElementById('your_pass').value;
+            if (!your_pass) {
+                showError('login-pass-error', 'Password is required');
+                valid = false;
+            }
+
+            if (!valid) {
+                event.preventDefault();
+            }
+        });
+
+        function showError(elementId, message) {
+            document.getElementById(elementId).innerText = message;
+        }
+
+        function clearErrorMessages() {
+            const errorElements = document.querySelectorAll('.error-message');
+            errorElements.forEach(function(element) {
+                element.innerText = '';
+            });
+        }
+    </script>
+</body>
+
+</html>
+
